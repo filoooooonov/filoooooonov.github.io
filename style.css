@@ -273,7 +273,6 @@ section {
     color: #d48641;
     font-size: medium;
     font-weight: 600;
-    margin-top: 25px;
     text-align: left;
     transition: all 100ms;
 }
@@ -357,26 +356,29 @@ section {
     color: rgb(181,181,181);
     font-size: medium;
     margin-top: 15px;
+    margin-bottom: 25px;
     cursor: default;
 }
 
 .popup-button {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Add this line */
+
 }
 
 .popup-openpdf__button {
     width: max-content;
     font-size: small;
-    padding: 5px 10px 5px 10px;
-    color: red;
-    border-radius: 15px;
+    padding: 10px 14px 10px 14px;
+    color: white;
+    border-radius: 20px;
     border: 1px white solid;
     box-shadow: 0px 2px 2px 1px rgba(255, 255, 255, 0.25);
     font-weight: 500;
     transition: all 150ms ease;
     cursor: default;
+
 }
 
 .popup-openpdf__button:hover {
