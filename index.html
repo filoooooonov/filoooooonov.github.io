@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleksei Filonov</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/photo_2024-03-13_11-58-34.jpg" alt="Profile Picture">
+        </div>
+        <div class="section__text">
+            <h1 class="title">Aleksei Filonov</h1>
+            <div class="box-about_me">
+                Hi! I am a high school student from Imatra, Finland, who is deeply interested in data science and machine learning, as well as web design.
+            </div>
+            <div class="btn_container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('https://www.linkedin.com/in/aleksei-filonov-643095296/')">
+                    LinkedIn
+                </button>
+                <button class="btn btn-color-2" 
+                onclick="window.open('https://www.github.com/filoooooonov')">
+                    Github
+                </button>
+                <button class="btn btn-color-1" 
+                onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <section id="projects">
+        <h1 class="title2">my projects</h1>
+        <div class="wrapper">
+            <div class="box">
+                <img src="/assets/pecto_screenshot.png"  onclick="openPopup('popup1')">
+                <h1 class="box-title">UI for Pecto</h1>
+                <div class="box__tag-container">
+                    <div class="box__tag">FIGMA</div>
+                </div>
+                <button class="box__button" onclick="openPopup('popup1')">Read more →</button>
+            </div>
+            <div id="overlay"></div>
+            <div class="popup" id="popup1">
+                <img src="/assets/pecto_screenshot.png">
+                <h1 class="box-title">UI for Pecto</h1>
+                <div class="box__tag-container">
+                    <div class="box__tag">FIGMA</div>
+                </div>
+                <text class="popup-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam amet voluptate aliquam assumenda? Ab, iure voluptatibus. Iste repellat error eius enim provident, excepturi porro consequatur soluta est corrupti sapiente ratione?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis placeat at dolores fugit qui dolore nam deserunt. Dolore consequatur nemo aspernatur. In, facere dolorum. Ea blanditiis a voluptatibus doloribus optio?
+                </text>
+                <button class="box__button" onclick="closePopup('popup1')">← Go back</button>
+            </div>
+
+            <div id="overlay" onclick="closePopup('popup2')"></div>
+            <div class="box">
+                <img src="/assets/mathia_screenshot.png" onclick="openPopup('popup2')">
+                <h1 class="box-title">Mathematical Exploration of Gradient Descent</h1>
+                <div class="box__tag-container">
+                    <div class="box__tag">JUPYTER</div>
+                    <div class="box__tag">PYTHON</div>
+                </div>
+                <button class="box__button" onclick="openPopup('popup2')">Read more →</button>
+            </div>
+            <div class="popup" id="popup2">
+                <img src="/assets/mathia_screenshot.png">
+                <h1 class="box-title">Mathematical Exploration of Gradient Descent</h1>
+                <div class="box__tag-container">
+                    <div class="box__tag">JUPYTER</div>
+                    <div class="box__tag">PYTHON</div>
+                </div>
+                <text class="popup-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro libero iure laboriosam dolorem minima facere velit doloribus, corporis possimus! Asperiores, placeat. Deserunt architecto dignissimos eaque vel cumque doloremque dicta molestias.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor mollitia itaque modi, cumque, debitis voluptatem nisi tenetur, tempora minus nobis amet repellendus. Aspernatur officiis provident quis dicta vitae assumenda illo!
+                </text>
+                <div class="popup-button">
+                    <button  class="box__button" onclick="closePopup('popup2')">← Go back</button>
+                    <!-- I should not link to the local file-->
+                    <button class="popup-openpdf__button" onclick="window.open('/assets/Mathematical Investigation.pdf')">Open PDF →</button> 
+                </div>
+            </div>
+
+            
+        </div>
+        
+    </section>
+    <section id="contact">
+        <h1 class="title2">contact me</h1>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

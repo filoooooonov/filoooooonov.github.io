@@ -1,0 +1,408 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* For WebKit-based browsers (Chrome, Safari, newer versions of Opera) */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #333; /* Color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #666; /* Color of the scrollbar handle */
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Color of the scrollbar handle on hover */
+}
+
+body {
+    font-family: "Poppins", "sans-serif";
+    background-color: #191919;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* Transition */
+
+a, .btn {
+    transition: all 300 ms ease
+}
+
+button {
+    background-color: inherit;
+    border: none;
+}
+
+/* SECTIONS */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 65vh;
+    margin-bottom: 15vh;
+    margin-top: 15vh;
+    padding-bottom: 40px;
+}
+
+.section__pic-container {
+    display: flex;
+    margin: auto 0;
+}
+
+.section__pic-container img {
+    border-radius: 50%;
+    object-position: -20%, 0;
+
+    object-fit: cover;
+    height: 450px;
+    width: 450px;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+    color: white;
+}
+
+.section__text p {
+    font-weight: 400;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    background: -webkit-linear-gradient(white, #565656);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: none;
+    cursor: default;
+}
+
+.title2 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    background: -webkit-linear-gradient(white, #787878);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: none;
+    cursor: default;
+}
+
+.box-about_me {
+    border: 1px solid #d48641;
+    height: auto;
+    width: 450px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    cursor: default;
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+ .btn {
+    width: 6rem;
+    height: 3rem; 
+    background: #191919; 
+    border: 1px grey solid;
+    transition: all 300ms ease;
+    width: 7rem;
+    border-radius: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    box-shadow: 0px 2px 2px 1px rgba(255, 255, 255, 0.25);
+    font-weight: 500;
+    color: white;
+ }
+
+ .btn:hover {
+    box-shadow: 0px 0px 0px 0px;
+    cursor: pointer;
+    border: 1px #d48641 solid;
+    color: #d48641;
+ }
+
+ .btn:active {
+    transform: translateY(10px);
+    background-color:rgba(255, 255, 255, 0.25);
+    transition: all 100ms ease;
+ }
+
+
+/* MY PROJECTS SECTION */
+
+#projects {
+    background-color: #262626c2;
+    height: auto;
+    padding-bottom: 100px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 50px;
+    position: relative;
+}
+
+/* BOX */
+
+.wrapper {
+    margin-top: 40px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    
+
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    
+
+}
+.box {
+    display: grid;
+    grid-auto-flow: row;
+    width: 600px;
+    height: auto;
+    padding-bottom: 25px;
+    background: #191919;
+    color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgb(85,85,85);
+    transition: all 300ms ease;
+}
+
+    
+.box img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.box > *:not(img) {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.box:hover {
+    transform: translateY(-3px);
+}   
+
+.box-title {
+    display: inline-block;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    cursor: default;
+    word-wrap: break-word;
+    width: calc(100% - 40px);
+}
+
+.box__tag-container {
+    display: flex;
+    gap: 10px;
+}
+
+.box__tag {
+    width: max-content;
+    font-size: small;
+    padding: 5px 10px 5px 10px;
+    color: #787878;
+    background-color: #333;
+    border-radius: 20px;
+    cursor: default;
+}
+
+.box__button {
+    color: #d48641;
+    font-size: medium;
+    font-weight: 600;
+    margin-top: 25px;
+    text-align: left;
+    transition: all 100ms;
+}
+
+.box__button:hover {
+    color: #787878;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+/* BOX POPUP */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+    height: 100%;
+    visibility: visible;
+}
+
+.popup {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 10;
+    background-color: #191919;
+    border: 1px solid rgb(85,85,85);
+    border-radius: 20px;
+
+    width: 800px;
+    height: auto;
+    max-width: 1000px;
+    max-height: 95vh; 
+
+    padding-bottom: 30px;
+    text-align: left;
+    visibility: visible;
+    overflow: auto;
+}
+
+.popup::-webkit-scrollbar {
+    width: 0;
+}
+
+.popup img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.popup > *:not(img) {
+    padding-left: 30px; /* Apply padding to all children except img */
+    padding-right: 30px;
+    overflow-wrap: break-word;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-description {
+    display: inline-block;
+    color: rgb(181,181,181);
+    font-size: medium;
+    margin-top: 15px;
+    cursor: default;
+}
+
+.popup-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-openpdf__button {
+    width: max-content;
+    font-size: small;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    border-radius: 15px;
+    border: 1px white solid;
+    box-shadow: 0px 2px 2px 1px rgba(255, 255, 255, 0.25);
+    font-weight: 500;
+    transition: all 150ms ease;
+    cursor: default;
+}
+
+.popup-openpdf__button:hover {
+    border: 1px #d48641 solid;
+    color: #d48641;
+    background: #191919; 
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.popup-openpdf__button:active {
+    transform: translateY(10px);
+    background-color:rgba(255, 255, 255, 0.25);
+    transition: all 100ms ease; 
+}
+
+/* MY SKILLS SECTION */
+#skills {
+    height: 500px;
+}
+
+
+/* MY CONTACTS SECTION */
+
+#contact {
+    height: auto;
+    padding-bottom: 100px;
+    display: inline-block;
+    width: 100%;
+
+}

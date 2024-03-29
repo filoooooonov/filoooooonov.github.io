@@ -1,0 +1,65 @@
+@media screen and (max-width: 1550px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .box {
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    .popup {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #profile {
+        display: inline;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .section__pic-container img {
+        margin: 0 auto;
+        margin-bottom: 40px;
+        width: 80%;
+        height: auto;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        font-size: xx-large;
+    }
+
+    .box-about_me {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .btn-container {
+        justify-content: left;
+    }
+    .btn {
+        margin-top: 20px;
+    }
+
+    #projects {
+        margin-top: 50px;
+    }
+}
