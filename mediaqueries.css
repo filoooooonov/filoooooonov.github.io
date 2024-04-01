@@ -1,12 +1,4 @@
-@media screen and (max-width: 1550px) {
-    #desktop-nav {
-        display: none;
-    }
-    #hamburger-nav {
-        display: flex;
-    }
-
-
+@media screen and (max-width: 800px) {
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -17,10 +9,15 @@
     .box {
         margin-top: 10px;
         width: 80%;
+        height: 80%;
+        grid-column-gap: 5px;
+    }
+    .box img {
+        height: 100%;
     }
 
     .popup {
-        width: 80%;
+        width: 70%;
     }
 }
 

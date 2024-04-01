@@ -200,11 +200,12 @@ section {
     justify-items: center;
     align-content: space-evenly;
     align-items: center;
+    align-items: stretch;
     
 
     display: grid;
-    grid-template-columns: 300px 300px;
-    grid-column-gap: 20px;
+    grid-template-columns: 40% 40%;
+    grid-column-gap: 1%;
     grid-row-gap: 50px;
     
 
@@ -212,7 +213,7 @@ section {
 .box {
     display: grid;
     grid-auto-flow: row;
-    width: 600px;
+    width: 100%;
     height: auto;
     padding-bottom: 25px;
     background: #191919;
@@ -257,10 +258,12 @@ section {
 .box__tag-container {
     display: flex;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 .box__tag {
     width: max-content;
+    max-height: 30px;
     font-size: small;
     padding: 5px 10px 5px 10px;
     color: #787878;
