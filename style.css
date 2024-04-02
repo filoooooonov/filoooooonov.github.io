@@ -383,7 +383,6 @@ section {
     font-weight: 500;
     transition: all 150ms ease;
     cursor: default;
-
 }
 
 .popup-openpdf__button:hover {
@@ -399,26 +398,45 @@ section {
     transition: all 100ms ease; 
 }
 
-/* MY SKILLS SECTION */
-#skills {
-    height: 500px;
-}
-
 
 /* MY CONTACTS SECTION */
 
 #contact {
     height: auto;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     width: 100%;
     display: inline-block;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
 }
 
-.contact-imgcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contact__container {
+    margin: 40px auto;
+    display: inline-block;
+    width: 40%;
+    border-radius: 30px;
+    height: auto;
+    padding: 30px;
+    background-color: #262626c2;
+    color: rgb(181,181,181);
+    font-weight: 200;
+    overflow: hidden;
+    border: 1px solid rgb(85,85,85);
+}
+
+.contact__text-grid {
+    display: grid;
+    grid-template-columns: 120px 200px;
+    grid-column-gap: 200px;
+    grid-row-gap: 30px;
+    justify-content: center; 
+}
+
+.contact__text-grid .first-column {
+    text-align: left;
+}
+
+.contact__text-grid .second-column {
+    text-align: right;
 }
