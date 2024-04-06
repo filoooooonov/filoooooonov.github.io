@@ -1,4 +1,8 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+    #projects {
+        width: 90%;
+    }
+
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -9,11 +13,13 @@
     .box {
         margin-top: 10px;
         width: 80%;
-        height: 80%;
-        grid-column-gap: 5px;
+        height: fit-content;
+        aspect-ratio: 0;
     }
+
+
     .box img {
-        height: 100%;
+        height: auto;
     }
 
     .popup {
@@ -33,10 +39,11 @@
     .section__pic-container img {
         margin: 0 auto;
         margin-bottom: 40px;
-        width: 80%;
+        margin-top: 40px;
+        width: 300px;
         height: auto;
         max-height: 100%;
-        object-fit: contain;
+        aspect-ratio: 1/1;
     }
 
     .title {
