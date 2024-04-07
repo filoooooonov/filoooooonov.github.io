@@ -44,3 +44,16 @@ overlay.addEventListener('click', function(event) {
         });
     }
 });
+
+function copyToClipboard(text, element) {
+    const el = document.createElement('textarea');
+    el.value = text;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    element.textContent = 'Copied to clipboard!';
+    setTimeout(function() {
+        element.textContent = text;
+    }, 3000); // Change back to the original text after 2 seconds
+}
