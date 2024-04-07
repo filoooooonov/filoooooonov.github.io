@@ -214,6 +214,11 @@ section {
     justify-content: center;
     align-items: center; 
     overflow: hidden;
+    transition: all 500ms;
+}
+
+#projects:hover {
+    background-color: #576e7a2e;
 }
 
 /* BOX */
@@ -227,7 +232,7 @@ section {
     width: 1000px;
 
     display: grid;
-    grid-template-columns: 430px 430px;
+    grid-template-columns: 40% 40%;
     grid-row-gap: 50px;
 }
 
