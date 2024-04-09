@@ -1,21 +1,15 @@
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 900px) {
 
     body {
         margin: 0 5%;
     }
 
-
     .contact__text .text2 {
         font-size: 20px;
     }
 
-    .title2 {
-        margin-top: 60px;
-    }
-
     #projects {
-        margin-top: 50px;
         display: flex;
         justify-content: center;
     }
@@ -25,12 +19,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 15px 15px;
+        padding: 15px 15px 20px 15px;
         gap: 40px;
     }
 
     .box {
-        height: fit-content;
+        width: auto;
+        aspect-ratio: 0;
     }
 
     .box img {
@@ -39,15 +34,19 @@
     }
 
     .popup {
-        width: 90%;
+        width: 80vw;
+    }
+
+    .popup img {
+        height: 20%;
     }
 
 
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1100px) {
     #profile {
-        display: inline;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -56,9 +55,7 @@
 
     .section__pic-container img {
         margin: 0 auto;
-        margin-bottom: 40px;
-        margin-top: 40px;
-        width: 300px;
+        width: 220px;
         height: auto;
         max-height: 100%;
         aspect-ratio: 1/1;
@@ -69,10 +66,6 @@
         font-size: xx-large;
     }
 
-    .box-about_me {
-        margin: 0 auto 20px;
-    }
-
     .btn-container {
         justify-content: left;
     }
@@ -80,9 +73,6 @@
         margin-top: 20px;
     }
 
-    #projects {
-        margin-top: 50px;
-    }
     .wrapper {
         gap: 40px;
     }

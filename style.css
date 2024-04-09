@@ -76,7 +76,7 @@ section {
 #profile {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 3rem;
     height: 65vh;
     margin-bottom: 13vh;
     margin-top: 15vh;
@@ -93,8 +93,8 @@ section {
     object-position: -20%, 0;
 
     object-fit: cover;
-    height: 450px;
-    width: 450px;
+    aspect-ratio: 1;
+    max-width: 350px;
 }
 
 .section__text {
@@ -133,8 +133,7 @@ section {
 .box-about_me {
     border: 1px solid #d48641;
     height: auto;
-    min-width: 350px;
-    max-width: 450px;
+    max-width: 460px;
     padding: 20px;
     margin-top: 20px;
     border-radius: 10px;
@@ -219,12 +218,11 @@ section {
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 40px 20px;
+    gap: 30px;
+    padding: 30px 30px 35px 30px;
 }
 
 .box {
-    max-width: 430px;
     width: auto;
     height: auto;
     padding-bottom: 20px;
@@ -271,7 +269,7 @@ section {
 .box__tag-container {
     display: flex;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .box__tag {
@@ -288,12 +286,13 @@ section {
 .box__button {
     color: #d48641;
     display: inline;
+
     width: fit-content;
     font-size: medium;
     font-weight: 600;
     text-align: left;
     transition: all 100ms;
-    margin-top: 20px;
+    
 }
 
 .box__button:hover {
@@ -334,10 +333,10 @@ section {
     border: 1px solid #485074;
     border-radius: 20px;
 
-    width: 800px;
     height: auto;
-    max-width: 1000px;
-    max-height: 95vh; 
+    max-width: 700px;
+    width: fit-content;
+    max-height: 80vh; 
 
     padding-bottom: 30px;
     text-align: left;
@@ -350,7 +349,8 @@ section {
 }
 
 .popup img {
-    height: 400px;
+    height: 100%;
+    max-height: 400px;
     width: 100%;
     object-fit: cover;
     background-size: cover;
@@ -382,18 +382,19 @@ section {
 .popup-button {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-content: center;
 }
 
 .popup-openpdf__button {
     width: max-content;
     font-size: small;
-    padding: 10px 14px 10px 14px;
+    padding: 10px 14px;
     color: white;
     border-radius: 20px;
     font-weight: 500;
     transition: all 150ms ease;
-    cursor: default;
+    cursor: pointer;
+    align-self: center;
 
     background-color: #576e7a27;
     border-top: 1.5px solid rgba(227, 241, 255, 0.068);
