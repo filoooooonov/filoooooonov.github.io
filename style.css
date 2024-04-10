@@ -91,9 +91,8 @@ section {
 .section__pic-container img {
     border-radius: 50%;
     object-position: -20%, 0;
-
+    aspect-ratio: 1/1;
     object-fit: cover;
-    aspect-ratio: 1;
     max-width: 350px;
 }
 
@@ -152,28 +151,27 @@ section {
 }
 
  .btn {
-    width: 6rem;
+    padding: 15px;
     height: 3rem; 
     transition: all 200ms ease;
-    width: 7rem;
-    border-radius: 20px;    
+    min-width: 100px;
+    border-radius: 30px;    
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-top: 20px;
     font-weight: 500;
     color: white;
 
-    background-color: #576e7a27;
+    background-color: #95bbd127;
     border-top: 1.5px solid rgba(227, 241, 255, 0.068);
 
-    border-radius: 25px;
     box-shadow: 0px 10px 20px 0px rgba(13, 23, 34, 0.334);
  }
 
 
  .btn:hover {
     box-shadow: 0px 10px 20px 0px rgba(13, 23, 34, 0.334);
-    background: #d4864147;
+    background: #d6843d47;
     color: white;
     cursor: pointer;
     transform: translateY(-1.5px);
@@ -225,7 +223,7 @@ section {
 .box {
     width: auto;
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     grid-auto-flow: row;
     background: #141825;
     color: white;
@@ -269,7 +267,7 @@ section {
 .box__tag-container {
     display: flex;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .box__tag {
@@ -277,8 +275,8 @@ section {
     height: fit-content;
     font-size: small;
     padding: 5px 10px 5px 10px;
-    color: #7882b1;
-    background-color: #1f243c;
+    color: #8a94bf;
+    background-color: #343b5fd4;
     border-radius: 20px;
     cursor: default;
 }
@@ -292,7 +290,6 @@ section {
     font-weight: 600;
     text-align: left;
     transition: all 100ms;
-    
 }
 
 .box__button:hover {
@@ -396,7 +393,7 @@ section {
     cursor: pointer;
     align-self: center;
 
-    background-color: #576e7a27;
+    background-color: #95bbd127;
     border-top: 1.5px solid rgba(227, 241, 255, 0.068);
 }
 
@@ -418,7 +415,7 @@ section {
 
 #contact {
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 200px;
     width: 50%;
     display: inline-block;
     justify-content: center;
