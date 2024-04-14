@@ -35,15 +35,21 @@ body {
     /*font-family: "Poppins", "sans-serif"; */
     margin: 0 20%;
     font-family: "Lato";
-    /* background-color: #0d0f19; */
     background-color:hsla(221,38%,14%,1);
+    /*
+    background-image: url('/assets/mesh-gradient-fotor-20240414142231.jpg');
+    background-size: cover;
+    background-position: center;
+    */
+        
     background-image:
     radial-gradient(at 23% 83%, rgb(12, 18, 30) 0px, transparent 50%),
     radial-gradient(at 16% 8%, hsla(225,33%,8%,1) 0px, transparent 50%),
     radial-gradient(at 89% 95%, rgb(15, 19, 30) 0px, transparent 50%),
-    radial-gradient(at 99% 10%, rgb(14, 31, 43) 0px, transparent 50%);
-
+    radial-gradient(at 99% 10%, rgb(23, 58, 69) 0px, transparent 50%);
+    
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -163,10 +169,10 @@ section {
     font-weight: 500;
     color: white;
 
-    background-color: #95bbd127;
+    background-color: #6a99b427;
     border-top: 1.5px solid rgba(227, 241, 255, 0.068);
 
-    box-shadow: 0px 10px 20px 0px rgba(13, 23, 34, 0.334);
+    box-shadow: 0px 5px 10px 0px rgba(13, 23, 34, 0.334);
  }
 
 
