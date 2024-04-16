@@ -137,7 +137,8 @@ section {
 
 .box-about_me {
     border: 1px solid #d48641;
-    height: auto;
+    height: max-content;
+
     max-width: 460px;
     padding: 20px;
     margin-top: 20px;
@@ -147,6 +148,8 @@ section {
     cursor: default;
 }
 
+.box-about_me span {
+}
 
 /* BUTTONS */
 
@@ -468,3 +471,17 @@ section {
     cursor: pointer;
 }
  
+
+/* Reveal elements CSS */
+.reveal {
+   position: relative;
+   transform: translateY(100px); 
+   opacity: 0;
+   transition: 2s ease;
+   transition-property: transform, opacity;
+}
+
+.reveal.active {
+    transform: translateY(0px); 
+    opacity: 1;
+}
