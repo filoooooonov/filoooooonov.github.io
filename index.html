@@ -9,7 +9,9 @@
     <link rel="icon" href="">
 </head>
 <body>
-    <section id="profile" class="">
+
+    <!-- ===== PROFILE ===== -->
+    <section id="profile" class="reveal">
         <div class="section__pic-container">
             <img src="./assets/photo_2024-03-13_11-58-34.jpg" alt="Profile Picture">
         </div>
@@ -37,8 +39,9 @@
         
     </section>
     
-    <h1 class="title2">My projects 🧑‍💻</h1>
 
+    <!-- ===== PROJECTS ===== -->
+    <h1 class="title2">My projects 🧑‍💻</h1>
     <section id="projects" class="reveal">
             <div class="wrapper">
                 <div class="box">
@@ -49,19 +52,8 @@
                     </div>
                     <button class="box__orange-button button-in-box" onclick="openPopup('popup1')">Read more →</button>
                 </div>
-                <div id="overlay"></div>
-                <div class="popup" id="popup1">
-                    <img src="/assets/pecto_screenshot.png">
-                    <h1 class="box-title">User Interface for Pecto</h1>
-                    <div class="box__tag-container">
-                        <div class="box__tag">FIGMA</div>
-                    </div>
-                    <text class="popup-description"> Pecto is a language learning app for learning Finnish language that is still in development. My job in this project is to design the user interface of the app, as well as its color scheme and layout. </text>
-                    </text>
-                    <button class="box__orange-button" onclick="closePopup('popup1')">← Go back</button>
-                </div>
+                
 
-                <div id="overlay" onclick="closePopup('popup2')"></div>
                 <div class="box">
                     <img src="/assets/mathia_screenshot.png" onclick="openPopup('popup2')">
                     <h1 class="box-title">Mathematical Exploration of Gradient Descent</h1>
@@ -71,27 +63,45 @@
                     </div>
                     <button class="box__orange-button button-in-box" onclick="openPopup('popup2')">Read more →</button>
                 </div>
-                <div class="popup" id="popup2">
-                    <img src="/assets/mathia_screenshot.png">
-                    <h1 class="box-title">Mathematical Exploration of Gradient Descent</h1>
-                    <div class="box__tag-container">
-                        <div class="box__tag">JUPYTER</div>
-                        <div class="box__tag">PYTHON</div>
-                    </div>
-                    <text class="popup-description">My high school mathematics exploration about the gradient descent algorithm from machine learning. I explored how it can be applied in linear regression problems, as well as how it can be scaled to more complex cases. I coded the algorithm, as well as it's momentum accelerated version from scratch in Jupyter notebook. 
-                    </text>
-                    <div class="popup-button">
-                        <button  class="box__orange-button" onclick="closePopup('popup2')">← Go back</button>
-                        <!-- I should not link to the local file-->
-                        <button class="popup-openpdf__button" onclick="window.open('/assets/Mathematical Investigation.pdf')">Open PDF →</button> 
-                    </div>
-                </div> 
             </div>
-        
     </section>
-    <h1 class="title2">Get in touch with me 👋</h1>
 
-    <section id="contact" class="">
+    <!-- ===== POPUPS ===== -->
+    <div id="overlay"></div>
+    <div id="overlay"></div>
+    <div class="popup-container">
+        <div class="popup" id="popup1">
+            <img src="/assets/pecto_screenshot.png">
+            <h1 class="box-title">User Interface for Pecto</h1>
+            <div class="box__tag-container">
+                <div class="box__tag">FIGMA</div>
+            </div>
+            <text class="popup-description"> Pecto is a language learning app for learning Finnish language that is still in development. My job in this project is to design the user interface of the app, as well as its color scheme and layout. </text>
+            </text>
+            <button class="box__orange-button" onclick="closePopup('popup1')">← Go back</button>
+        </div>
+
+        <div class="popup" id="popup2">
+            <img src="/assets/mathia_screenshot.png">
+            <h1 class="box-title">Mathematical Exploration of Gradient Descent</h1>
+            <div class="box__tag-container">
+                <div class="box__tag">JUPYTER</div>
+                <div class="box__tag">PYTHON</div>
+            </div>
+            <text class="popup-description">My high school mathematics exploration about the gradient descent algorithm from machine learning. I explored how it can be applied in linear regression problems, as well as how it can be scaled to more complex cases. I coded the algorithm, as well as it's momentum accelerated version from scratch in Jupyter notebook. 
+            </text>
+            <div class="popup-button">
+                <button  class="box__orange-button" onclick="closePopup('popup2')">← Go back</button>
+                <!-- I should not link to the local file-->
+                <button class="popup-openpdf__button" onclick="window.open('/assets/Mathematical Investigation.pdf')">Open PDF →</button> 
+            </div>
+        </div> 
+    </div>
+
+
+    <!-- ===== CONTACTS ===== -->
+    <section id="contact" class="reveal">
+        <h1 class="title2">Get in touch with me 👋</h1>
         <div class="contact__container">
             <div class="contact__text">
                 <span class="text1">EMAIL</span> <br>

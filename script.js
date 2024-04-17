@@ -6,6 +6,7 @@ function calculateScrollbarWidth() {
     scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 }
 
+// PROJECTS - popups
 function openPopup(popupId) {
     calculateScrollbarWidth(); // Calculate scrollbar width
 
@@ -36,7 +37,7 @@ function closePopup(popupId) {
     }
 }
 
-/* close the popup when you click outside the popup window */
+// close the popup when you click outside the popup window 
 overlay.addEventListener('click', function(event) {
     if (event.target === overlay) {
         document.querySelectorAll('.popup').forEach(function(popup) {
@@ -45,6 +46,8 @@ overlay.addEventListener('click', function(event) {
     }
 });
 
+
+// CONTACTS - copying to clipboard
 function copyToClipboard(text, element) {
     const el = document.createElement('textarea');
     el.value = text;
@@ -58,6 +61,8 @@ function copyToClipboard(text, element) {
     }, 3000); // Change back to the original text after 2 seconds
 }
 
+
+// SECTIONS - scroll animations
 const sections = document.querySelectorAll("section")
 
 sections.forEach((section) => {
@@ -88,5 +93,40 @@ sections.forEach((section) => {
                 }, index * delay)
             }
         });
+    });
+
+    window.addEventListener("scroll", () => {
+        let reveals = section.querySelectorAll(".reveal");
+        
+        reveals.forEach((reveal, index) => {
+            let windowHeight = window.innerHeight;
+            let revealRectTop = section.getBoundingClientRect().top;   
+            let revealPoint = -250;     
+            
+            if(revealRectTop < windowHeight - revealPoint) {
+                const delay = 600;
+
+                setTimeout(() => {
+                    reveal.classList.add("active");
+                }, index * delay);
+            }
+        })
+    });
+
+    window.addEventListener("load", () => {
+        let reveals = section.querySelectorAll(".reveal");
+        
+        reveals.forEach((reveal, index) => {
+            let windowHeight = window.innerHeight;
+            let revealRectTop = section.getBoundingClientRect().top;        
+            
+            if(revealRectTop < windowHeight) {
+                const delay = 600;
+
+                setTimeout(() => {
+                    reveal.classList.add("active");
+                }, index * delay);
+            }
+        })
     });
 });
