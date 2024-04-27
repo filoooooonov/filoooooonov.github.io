@@ -34,6 +34,7 @@
 body {
     /*font-family: "Poppins", "sans-serif"; */
     margin: 0 20%;
+    margin-top: 15vh;
     font-family: "Lato";
     background-color:hsla(221,38%,14%,1);
     /*
@@ -69,7 +70,6 @@ button {
 /* SECTIONS */
 
 section {
-    height: 96vh;
     min-height: fit-content;
 }
 
@@ -85,7 +85,7 @@ section {
     gap: 3rem;
     height: 65vh;
     margin-bottom: 13vh;
-    margin-top: 15vh;
+    /* margin-top: 15vh; */
     padding-bottom: 40px;
 }
 
@@ -179,19 +179,24 @@ section {
  }
 
 
- .btn:hover {
-    box-shadow: 0px 10px 20px 0px rgba(13, 23, 34, 0.334);
-    background: #d6843d47;
-    color: white;
-    cursor: pointer;
-    transform: translateY(-1.5px);
- }
+ @media (hover: hover) {
+    .btn:hover {
+        box-shadow: 0px 10px 20px 0px rgba(13, 23, 34, 0.334);
+        background: #d6843d47;
+        color: white;
+        cursor: pointer;
+        transform: translateY(-1.5px);
+    }
+    
+}
 
- .btn:active {
+.btn:active {
     transform: translateY(10px);
     background-color:rgba(255, 255, 255, 0.25);
     transition: all 100ms ease;
  }
+
+ 
 
 
 /* MY PROJECTS SECTION */
@@ -475,7 +480,7 @@ section {
 /* Reveal elements CSS */
 .reveal {
    position: relative;
-   transform: translateY(100px); 
+   transform: translateY(60px); 
    opacity: 0;
    transition: 1s ease;
    transition-property: transform, opacity;
