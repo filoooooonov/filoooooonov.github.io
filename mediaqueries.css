@@ -41,6 +41,10 @@
         height: 20%;
     }
 
+    .contact__text svg {
+        width: 25px;
+    }
+
 
 }
 
