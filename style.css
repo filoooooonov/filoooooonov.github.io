@@ -77,6 +77,13 @@ section {
     display: flex;
 }
 
+p {
+    color: white;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
 /* PROFILE SECTION */
 
 #profile {
@@ -250,7 +257,7 @@ section {
 
     
 .box img {
-    height: 240px;
+    height: 270px;
     width: 100%;
     object-fit: cover;
     background-size: cover;
@@ -368,7 +375,6 @@ section {
 
 .popup img {
     height: 100%;
-    max-height: 400px;
     width: 100%;
     object-fit: cover;
     background-size: cover;
