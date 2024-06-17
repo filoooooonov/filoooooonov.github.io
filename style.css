@@ -172,7 +172,7 @@ p {
     height: 3rem; 
     transition: all 200ms ease;
     min-width: 100px;
-    border-radius: 30px;    
+    border-radius: 15px;    
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-top: 20px;
