@@ -303,7 +303,7 @@ p {
 }
 
 .tag-in-box {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .box__orange-button {
@@ -399,7 +399,7 @@ p {
     color: rgb(181,181,181);
     font-size: medium;
     font-weight: 300;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 25px;
     line-height: 25px;
     cursor: default;
