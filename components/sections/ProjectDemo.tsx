@@ -1,8 +1,6 @@
 import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
-import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogClose,
@@ -83,7 +81,7 @@ const ProjectDemo = ({
           <DialogClose asChild>
             <button
               type="submit"
-              className="project-link border-none border-0 mt-[500px] w-max mx-auto"
+              className="project-link border-none border-0 mt-12 w-max mx-auto"
             >
               Go back
             </button>

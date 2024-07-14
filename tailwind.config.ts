@@ -27,6 +27,7 @@ const config = {
         primary: "#d48641",
         primary_dark: "#4d4038",
         secondary: "#e3e3e3",
+        box: "#2c3f542a",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
