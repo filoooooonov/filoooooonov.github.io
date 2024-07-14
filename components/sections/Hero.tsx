@@ -17,7 +17,7 @@ const Hero = () => {
         />
         <div>
           <h1 className="text-center my-8">Aleksei Filonov</h1>
-          <p className="border border-primary p-4 rounded-xl w-[90%] mx-auto">
+          <p className="border text-gray-200 border-primary p-4 rounded-xl w-[90%] mx-auto">
             Hey! I am an incoming freshman at Aalto University pursuing a career
             in Data Science. I'm also into web development and design, you can
             check out my latest projects below!
