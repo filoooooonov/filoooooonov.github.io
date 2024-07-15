@@ -56,8 +56,8 @@ const ProjectDemo = ({
         </DialogTrigger>
 
         {/* Inside the popup */}
-        <DialogContent className="sm:max-w-[1024px] bg-[#101721df] border-[#45417136] opacity-1">
-          <div className="px-12 pt-12">
+        <DialogContent className="w-[90%] sm:max-w-[1024px] bg-[#101721df] border-[#45417136] opacity-1">
+          <div className=" pt-6 sm:px-12 sm:pt-12">
             <Image
               src={imagePath}
               alt={`${title} image`}

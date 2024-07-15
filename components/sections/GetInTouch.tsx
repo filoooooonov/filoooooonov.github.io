@@ -2,10 +2,14 @@
 
 import React from "react";
 
-const GetInTouch = () => {
+interface GetInTouchProps {
+  className?: string;
+}
+
+const GetInTouch = ({ className }: GetInTouchProps) => {
   return (
-    <>
-      <h2>Get in touch with me 👋</h2>
+    <section className={className}>
+      <h2 id="contacts">Get in touch with me 👋</h2>
       <div className="mt-8">
         <ul>
           <li className="flex flex-col">
@@ -61,7 +65,7 @@ const GetInTouch = () => {
           </li>
         </ul>
       </div>
-    </>
+    </section>
   );
 };
 

@@ -6,9 +6,13 @@ import me from "../../public/me.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
-const Hero = () => {
+interface HeroProps {
+  className?: string;
+}
+
+const Hero = ({ className }: HeroProps) => {
   return (
-    <>
+    <section className={className}>
       <div className="flex flex-col lg:grid grid-cols-2 pt-[30vh] h-[90vh]">
         <Image
           src={me}
@@ -18,9 +22,9 @@ const Hero = () => {
         <div>
           <h1 className="text-center my-8">Aleksei Filonov</h1>
           <p className="border text-gray-200 border-primary p-4 rounded-xl w-[90%] mx-auto">
-            Hey! I am an incoming freshman at Aalto University pursuing a career
-            in Data Science. I'm also into web development and design, you can
-            check out my latest projects below!
+            Hey! I&apos;m an incoming freshman at Aalto University pursuing a
+            career in Data Science. I&apos;m also into web development and
+            design, you can check out my latest projects below!
           </p>
           <div className="flex justify-evenly mt-12">
             <a
@@ -38,13 +42,13 @@ const Hero = () => {
             >
               Github <FaGithub />
             </a>
-            <Link href="/" className="button">
+            <Link href="#contacts" className="button">
               Contact me
             </Link>
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

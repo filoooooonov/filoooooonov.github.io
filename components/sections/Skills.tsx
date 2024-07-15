@@ -6,11 +6,15 @@ import { SiDjango } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { FaPython } from "react-icons/fa";
 
-const Skills = () => {
+interface SkillsProps {
+  className?: string;
+}
+
+const Skills = ({ className }: SkillsProps) => {
   return (
-    <>
-      <h2>My tools and skills 🛠️</h2>
-      <div className="flex gap-4 mt-8 mb-[200px]">
+    <section className={className}>
+      <h2 className="animate-fade-up">My tools and skills 🛠️</h2>
+      <div className="flex flex-wrap gap-4 mt-8 mb-[200px] ">
         <span className="group skill-box">
           <RiNextjsFill
             className="group-hover:fill-primary transition duration-200"
@@ -54,7 +58,7 @@ const Skills = () => {
           Python
         </span>
       </div>
-    </>
+    </section>
   );
 };
 

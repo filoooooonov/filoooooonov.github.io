@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #757575;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -33,7 +53,7 @@
 
   .dark {
     --background: 20 14.3% 4.1%;
-    --foreground: 60 9.1% 97.8%;
+    --foreground: 60 9.1% 100%;
     --card: 20 14.3% 4.1%;
     --card-foreground: 60 9.1% 97.8%;
     --popover: 20 14.3% 4.1%;
@@ -104,7 +124,7 @@ p {
 }
 
 .button {
-  @apply text-white bg-[#7798bd2a] py-2 px-6 rounded-full border-t border-[#9893cc36] cursor-pointer shadow-md transition duration-200;
+  @apply text-white bg-[#7798bd2a] py-2 px-6 rounded-full border-t border-[#616a9136] cursor-pointer transition duration-200;
   @apply hover:bg-primary_dark hover:-translate-y-0.5;
 }
 
