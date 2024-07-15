@@ -10,43 +10,43 @@ const Skills = () => {
   return (
     <>
       <h2>My tools and skills 🛠️</h2>
-      <div className="flex gap-4 mt-8 mb-20">
-        <span className="group bg-box text-zinc-400 hover:text-zinc-200 transition duration-200 rounded-xl p-4 flex items-center gap-4 select-none">
+      <div className="flex gap-4 mt-8 mb-[200px]">
+        <span className="group skill-box">
           <RiNextjsFill
             className="group-hover:fill-primary transition duration-200"
             size={30}
           />
           Next.js
         </span>
-        <span className="group bg-box text-zinc-400 hover:text-zinc-200 transition duration-200 rounded-xl p-4 flex items-center gap-4 select-none">
+        <span className="group skill-box">
           <FaReact
             className="group-hover:fill-primary transition duration-200"
             size={30}
           />
           React
         </span>
-        <span className="group bg-box text-zinc-400 hover:text-zinc-200 transition duration-200 rounded-xl p-4 flex items-center gap-4 select-none">
+        <span className="group skill-box">
           <RiTailwindCssFill
             className="group-hover:fill-primary transition duration-200"
             size={30}
           />
           Tailwind CSS
         </span>
-        <span className="group bg-box text-zinc-400 hover:text-zinc-200 transition duration-200 rounded-xl p-4 flex items-center gap-4 select-none">
+        <span className="group skill-box">
           <SiDjango
             className="group-hover:fill-primary transition duration-200"
             size={30}
           />
           Django
         </span>
-        <span className="group bg-box text-zinc-400 hover:text-zinc-200 transition duration-200 rounded-xl p-4 flex items-center gap-4 select-none ">
+        <span className="group skill-box">
           <IoLogoFirebase
             className="group-hover:fill-primary transition duration-200"
             size={30}
           />
           Firebase
         </span>
-        <span className="group bg-box text-zinc-400 hover:text-zinc-200 transition duration-200 rounded-xl p-4 flex items-center gap-4 select-none ">
+        <span className="group skill-box">
           <FaPython
             className="group-hover:fill-primary transition duration-200"
             size={30}

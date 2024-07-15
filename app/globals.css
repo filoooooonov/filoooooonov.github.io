@@ -116,3 +116,15 @@ p {
   @apply text-primary font-semibold;
   @apply hover:underline hover:underline-offset-8;
 }
+
+.skill-box {
+  @apply bg-box text-zinc-400 hover:text-zinc-200 transition duration-200 rounded-xl p-4 flex items-center gap-4 select-none;
+}
+
+.contact-title {
+  @apply text-zinc-500 text-base font-light;
+}
+
+.contact-link {
+  @apply hover:text-primary transition duration-200 cursor-pointer text-white text-2xl;
+}

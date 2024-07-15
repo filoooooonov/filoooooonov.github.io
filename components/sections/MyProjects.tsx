@@ -9,7 +9,7 @@ const MyProjects = () => {
   return (
     <>
       <h2>My projects 🧑‍💻</h2>
-      <div className="flex flex-col lg:grid grid-cols-2 gap-10 mt-8 bg-box p-8 rounded-3xl border-t border-[#45417136] ">
+      <div className="flex flex-col lg:grid grid-cols-2 gap-10 mt-8 bg-box p-8 rounded-3xl border-t border-[#45417136] mb-[150px]">
         <ProjectDemo
           imagePath={kukibitImg}
           title="Portfolio website for Kukibit"
@@ -32,9 +32,9 @@ const MyProjects = () => {
           description="User interface design for Pecto, a language learning app that is currently in development."
         />
       </div>
-      <button className="hover:bg-box text-zinc-500 rounded-xl w-max mx-auto py-4 px-6 flex items-center gap-2 mt-4 mb-20 hover:text-zinc-300 transition duration-200">
+      {/* <button className="hover:bg-box text-zinc-500 rounded-xl w-max mx-auto py-4 px-6 flex items-center gap-2 mt-4 mb-20 hover:text-zinc-300 transition duration-200">
         See all projects <FaArrowRight />
-      </button>
+      </button> */}
     </>
   );
 };

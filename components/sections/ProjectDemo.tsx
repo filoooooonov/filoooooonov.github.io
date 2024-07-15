@@ -81,7 +81,7 @@ const ProjectDemo = ({
           <DialogClose asChild>
             <button
               type="submit"
-              className="project-link border-none border-0 mt-12 w-max mx-auto"
+              className="project-link border-none border-0 mt-12 w-max mx-auto "
             >
               Go back
             </button>
