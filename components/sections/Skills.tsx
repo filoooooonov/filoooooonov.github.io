@@ -10,7 +10,7 @@ const Skills = () => {
   return (
     <>
       <h2>My tools and skills 🛠️</h2>
-      <div className="flex gap-4 mt-8">
+      <div className="flex gap-4 mt-8 mb-20">
         <span className="group bg-box text-zinc-400 hover:text-zinc-200 transition duration-200 rounded-xl p-4 flex items-center gap-4 select-none">
           <RiNextjsFill
             className="group-hover:fill-primary transition duration-200"

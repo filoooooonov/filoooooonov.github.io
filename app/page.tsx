@@ -1,3 +1,4 @@
+import GetInTouch from "@/components/sections/GetInTouch";
 import Hero from "@/components/sections/Hero";
 import MyProjects from "@/components/sections/MyProjects";
 import Skills from "@/components/sections/Skills";
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <MyProjects />
       <Skills />
+      <GetInTouch />
     </main>
   );
 }
