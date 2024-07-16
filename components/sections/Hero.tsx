@@ -13,11 +13,11 @@ interface HeroProps {
 const Hero = ({ className }: HeroProps) => {
   return (
     <section className={className}>
-      <div className="flex flex-col lg:grid grid-cols-2 pt-[30vh] h-[90vh]">
+      <div className="flex flex-col lg:grid grid-cols-2 pt-[5vh] sm:pt-[25vh] h-[90vh]">
         <Image
           src={me}
           alt="Profile photo"
-          className="rounded-full aspect-square object-cover max-w-[350px] mx-auto"
+          className="rounded-full aspect-square object-cover max-w-[250px] sm:max-w-[350px] mx-auto"
         />
         <div>
           <h1 className="text-center my-8">Aleksei Filonov</h1>
@@ -26,7 +26,7 @@ const Hero = ({ className }: HeroProps) => {
             career in Data Science. I&apos;m also into web development and
             design, you can check out my latest projects below!
           </p>
-          <div className="flex justify-evenly mt-12">
+          <div className="flex flex-col sm:flex-row justify-evenly gap-6 mt-12">
             <a
               href="https://www.linkedin.com/in/aleksei-filonov"
               target="_blank"
@@ -38,7 +38,7 @@ const Hero = ({ className }: HeroProps) => {
             <a
               href="https://github.com/filoooooonov"
               target="_blank"
-              className="button flex items-center gap-2"
+              className="hidden sm:flex button  items-center gap-2"
             >
               Github <FaGithub />
             </a>

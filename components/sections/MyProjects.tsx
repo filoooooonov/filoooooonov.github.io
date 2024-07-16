@@ -13,7 +13,7 @@ const MyProjects = ({ className }: MyProjectProps) => {
   return (
     <section className={className}>
       <h2>My projects 🧑‍💻</h2>
-      <div className="flex flex-col lg:grid grid-cols-2 gap-10 mt-8 bg-box p-8 rounded-3xl border-t border-[#45417136] mb-[150px]">
+      <div className="flex flex-col lg:grid grid-cols-2 gap-10 mt-8 sm:bg-box sm:p-8 rounded-3xl sm:border-t border-[#45417136] mb-[150px]">
         <ProjectDemo
           imagePath={kukibitImg}
           title="Portfolio website for Kukibit"
