@@ -148,3 +148,16 @@ p {
 .contact-link {
   @apply hover:text-primary transition duration-200 cursor-pointer text-white text-2xl;
 }
+
+.nav-link {
+  @apply text-zinc-400 cursor-pointer py-3 px-6 rounded-lg;
+  @apply hover:text-zinc-100 hover:bg-box;
+}
+
+.nav-dropdown {
+  @apply bg-[#0f1828]  text-white px-2 w-max absolute left-0 top-0 py-2 rounded-xl;
+}
+
+.nav-dropdown-link {
+  @apply font-medium cursor-pointer py-4 hover:bg-[#142035] rounded-md px-4 transition duration-200;
+}

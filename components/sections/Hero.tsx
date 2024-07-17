@@ -13,7 +13,7 @@ interface HeroProps {
 const Hero = ({ className }: HeroProps) => {
   return (
     <section className={className}>
-      <div className="flex flex-col lg:grid grid-cols-2 pt-[5vh] sm:pt-[25vh] h-[90vh]">
+      <div className="flex flex-col lg:grid grid-cols-2 pt-[5vh] sm:pt-[12vh] h-[75vh]">
         <Image
           src={me}
           alt="Profile photo"
