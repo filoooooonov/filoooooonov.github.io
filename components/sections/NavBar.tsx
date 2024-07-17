@@ -26,16 +26,31 @@ const NavBar = () => {
             <NavigationMenuTrigger>
               <Link href="/projects">Projects</Link>
             </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul>
+            <NavigationMenuContent className="nav-dropdown ">
+              <ul className="flex gap-2 flex-col">
                 <li className="nav-dropdown-link">
-                  <Link href="/projects/#webdev">Web Development</Link>
+                  <Link
+                    href="/projects/#webdev"
+                    className="block w-full cursor-pointer py-3 px-2"
+                  >
+                    Web Development
+                  </Link>
                 </li>
                 <li className="nav-dropdown-link">
-                  <Link href="/projects/#uiux">UI/UX</Link>
+                  <Link
+                    href="/projects/#uiux"
+                    className="block w-full cursor-pointer py-3 px-2"
+                  >
+                    UI/UX
+                  </Link>
                 </li>
                 <li className="nav-dropdown-link">
-                  <Link href="/projects/#datascience">Data Science</Link>
+                  <Link
+                    href="/projects/#datascience"
+                    className="block w-full cursor-pointer py-3 px-2"
+                  >
+                    Data Science
+                  </Link>
                 </li>
               </ul>
             </NavigationMenuContent>

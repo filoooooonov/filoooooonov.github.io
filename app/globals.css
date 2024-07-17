@@ -155,9 +155,9 @@ p {
 }
 
 .nav-dropdown {
-  @apply bg-[#0f1828]  text-white px-2 w-max absolute left-0 top-0 py-2 rounded-xl;
+  @apply bg-[#0f1828]  text-white px-2 gap-8 w-max absolute left-0 top-0 py-2 rounded-xl;
 }
 
 .nav-dropdown-link {
-  @apply font-medium cursor-pointer py-4 hover:bg-[#142035] rounded-md px-4 transition duration-200;
+  @apply font-medium cursor-pointer hover:bg-[#142035] rounded-md  transition duration-200;
 }
