@@ -1,6 +1,4 @@
 import React from "react";
-import kukibitImg from "../../public/kukibit_preview.png";
-import Image from "next/image";
 import { projects } from "@/components/sections/ProjectList";
 import ProjectDemoHorizontal from "@/components/sections/ProjectDemoHorizontal";
 

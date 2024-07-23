@@ -5,26 +5,16 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { Project } from "./ProjectList";
 
 interface ProjectDemoProps {
-  imagePath: StaticImageData | string;
-  title: string;
-  tags: string[];
-  description: string;
+  project: Project;
 }
 
-const ProjectDemo = ({
-  imagePath,
-  title,
-  tags,
-  description,
-}: ProjectDemoProps) => {
+const ProjectDemo = ({ project }: ProjectDemoProps) => {
   return (
     <Dialog>
       <div className="flex flex-col group cursor-pointer">
@@ -32,15 +22,15 @@ const ProjectDemo = ({
         <DialogTrigger asChild>
           <div>
             <Image
-              src={imagePath}
-              alt={`${title} image`}
+              src={project.image}
+              alt={`${project.title} image`}
               className="transition duration-500 ease-out hover:scale-[1.02] rounded-xl mb-8 h-[300px] object-cover"
             />
             <h3 className="mb-2 group-hover:text-primary transition duration-300">
-              {title}
+              {project.title}
             </h3>
             <div className="flex gap-2 text-white mb-6">
-              {tags.map((tag, i) => {
+              {project.tags.map((tag, i) => {
                 return (
                   <div key={i} className="tag ">
                     {tag}
@@ -48,7 +38,7 @@ const ProjectDemo = ({
                 );
               })}
             </div>
-            <p className="text-gray-400">{description}</p>
+            <p className="text-gray-400">{project.descriptionShort}</p>
             <span className="project-link mt-4 flex items-center gap-2">
               Read more <FaArrowRight />
             </span>
@@ -59,15 +49,15 @@ const ProjectDemo = ({
         <DialogContent className="w-[90%] sm:max-w-[1024px] bg-[#101721df] border-[#45417136] opacity-1">
           <div className=" pt-6 sm:px-12 sm:pt-12">
             <Image
-              src={imagePath}
-              alt={`${title} image`}
+              src={project.image}
+              alt={`${project.title} image`}
               className="rounded-xl mb-8"
             />
           </div>
 
-          <DialogTitle className="text-white">{title}</DialogTitle>
+          <DialogTitle className="text-white">{project.title}</DialogTitle>
           <div className="flex gap-2">
-            {tags.map((tag, i) => {
+            {project.tags.map((tag, i) => {
               return (
                 <div key={i} className="tag ">
                   {tag}
@@ -76,7 +66,7 @@ const ProjectDemo = ({
             })}
           </div>
 
-          <p className="text-zinc-300">{description}</p>
+          <p className="text-zinc-300">{project.descriptionLong}</p>
 
           <DialogClose asChild>
             <button
