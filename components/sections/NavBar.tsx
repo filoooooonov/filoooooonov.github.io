@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,12 +12,21 @@ import {
 import Link from "next/link";
 import { RiMenu3Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
+import { GoChevronDown } from "react-icons/go";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+  const [showSidebarProjects, setShowSidebarProjects] = useState(false);
+
+  useEffect(() => {
+    if (nav) {
+      document.body.style.overflow = "hidden";
+    } else document.body.style.overflow = "scroll";
+    return () => {};
+  }, [nav]);
 
   return (
-    <nav className="max-w-[1024px] py-8 mx-auto h-[6vh] items-center flex justify-between mb-20">
+    <nav className="max-w-[1024px] py-8 mx-auto h-[10vh] items-center flex justify-between mb-20 relative">
       <h3 className="z-50 cursor-pointer absolute top-6">
         <Link
           href="/"
@@ -46,7 +55,7 @@ const NavBar = () => {
         )}
       </div>
 
-      <NavigationMenu className="hidden sm:block">
+      <NavigationMenu className="hidden sm:block ml-auto">
         <NavigationMenuList className="gap-8">
           <NavigationMenuItem>
             <NavigationMenuTrigger>
@@ -96,12 +105,58 @@ const NavBar = () => {
 
       {/* Sidebar */}
       <div
-        className={`block fixed duration-300 ease-out h-screen sm:hidden  w-screen ${
+        className={`flex fixed duration-300 ease-out h-screen sm:hidden  w-screen items-center justify-center ${
           nav
             ? "top-0 bg-[#121e2e]"
             : "-top-[100%] bg-gradient-to-b from-[#121e2e]"
         }`}
-      ></div>
+      >
+        <ul className="text-slate-300 text-4xl flex flex-col gap-16">
+          <li
+            className="flex flex-col"
+            onClick={() => setShowSidebarProjects(!showSidebarProjects)}
+          >
+            <div className="flex items-center gap-4 mb-6">
+              Projects{" "}
+              <GoChevronDown
+                className={`${
+                  showSidebarProjects ? "rotate-180" : "rotate-0"
+                } transition duration-200`}
+              />
+            </div>
+
+            <div
+              className={`${
+                showSidebarProjects
+                  ? "max-h-96 opacity-100"
+                  : "max-h-0 opacity-0"
+              } transition-all duration-200 overflow-hidden`}
+            >
+              <ul className="text-xl text-slate-400 flex flex-col gap-2">
+                <li onClick={() => setNav(false)}>
+                  <Link href="/projects">All projects</Link>
+                </li>
+                <li onClick={() => setNav(false)}>
+                  <Link href="/projects/#webdev">Web Development</Link>
+                </li>
+                <li onClick={() => setNav(false)}>
+                  <Link href="/projects/#uiux">UI/UX</Link>
+                </li>
+                <li onClick={() => setNav(false)}>
+                  <Link href="/projects/#datascience">Data Science</Link>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li onClick={() => setNav(false)}>
+            <Link href="/#skills">Skills</Link>
+          </li>
+          <li onClick={() => setNav(false)}>
+            <Link href="/#contacts">Contacts</Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

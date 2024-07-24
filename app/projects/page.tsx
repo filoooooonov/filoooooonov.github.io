@@ -4,7 +4,7 @@ import ProjectDemoHorizontal from "@/components/sections/ProjectDemoHorizontal";
 
 const page = () => {
   return (
-    <section className="max-w-[1024px] mx-auto">
+    <section className="max-w-[1024px] mx-auto px-6 lg:px-0 ">
       <h2>Projects 🧑‍💻</h2>
 
       <h3 id="webdev" className="mt-12 mb-6 text-zinc-400">

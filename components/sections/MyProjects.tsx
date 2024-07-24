@@ -16,11 +16,11 @@ const MyProjects = ({ className }: MyProjectProps) => {
     <section className={className}>
       <h2>My projects 🧑‍💻</h2>
       <div className="flex flex-col lg:grid grid-cols-2 gap-10 mt-8 sm:bg-box sm:p-8 rounded-3xl sm:border-t border-[#45417136] ">
-        {projects.map((project) => {
+        {projects.map((project, index) => {
           return (
-            <>
+            <React.Fragment key={index}>
               <ProjectDemo project={project} />
-            </>
+            </React.Fragment>
           );
         })}
       </div>

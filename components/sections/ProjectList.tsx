@@ -21,7 +21,7 @@ export const projects = [
     tags: ["NEXT.JS", "REACT", "TAILWIND", "FIREBASE"],
     descriptionShort:
       "A custom built business portfolio website for Kukibit, an IT services company based in Lappeenranta, Finland.",
-    descriptionLong: "desc long",
+    descriptionLong: "In progress . . .",
   },
   {
     title: "Ruokascraper",
@@ -30,7 +30,8 @@ export const projects = [
     tags: ["NEXT.JS", "REACT", "TAILWIND", "WEB SCRAPING", "FIREBASE"],
     descriptionShort:
       "Ruokascraper is a price aggregator that helps you save money on groceries in Finnish S- and K-group stores. Currently in development.",
-    descriptionLong: "desc long",
+    descriptionLong:
+      "Ruokascraper is a service that helps you save money and time on your groceries. You can input your grocery list and Ruokascraper will find the cheapest deals from K-Group and S-Group stores and sort them into two grocery lists, each for a separate store chain. Currently in development.",
   },
   {
     title: "User interface for Pecto",
@@ -39,14 +40,17 @@ export const projects = [
     tags: ["FIGMA"],
     descriptionShort:
       "User interface design for Pecto, a language learning app that is currently in development.",
-    descriptionLong: "desc long",
+    descriptionLong:
+      "Pecto is a language learning app for learning Finnish language that is still in development. My job in this project is to design the user interface of the app, as well as its color scheme and layout.",
   },
   {
     title: "Mathematical Investigation of Gradient Descent",
     image: mathIAImg,
     category: "datascience",
     tags: ["PYTHON", "SCIKIT-LEARN", "JUPYTER"],
-    descriptionShort: "desc short",
-    descriptionLong: "desc long",
+    descriptionShort:
+      "My high school mathematics exploration about the gradient descent algorithm.",
+    descriptionLong:
+      "My high school mathematics exploration about the gradient descent algorithm. I explored how it can be applied in linear regression problems, how it is limited, as well as how it can be scaled to more complex cases. I recreated the algorithm, as well as its momentum accelerated version from scratch in Jupyter notebook.",
   },
 ];
