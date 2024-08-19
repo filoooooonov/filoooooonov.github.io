@@ -1,10 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
-import Link from "next/link";
 import me from "../../public/me.jpg";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import { HiAcademicCap } from "react-icons/hi2";
 
@@ -30,7 +26,7 @@ const Hero = ({ className }: HeroProps) => {
           </div>
           <div className="flex justify-end">
             <p className="text-lg flex items-center gap-2">
-              <HiAcademicCap /> Studying for Bachelor's of Data Science at{" "}
+              <HiAcademicCap /> Studying for Bachelor&apos;s of Data Science at{" "}
               <a
                 target="_blank"
                 href="https://www.aalto.fi/en/study-options/data-science-bachelor-of-science-technology-master-of-science-technology"
