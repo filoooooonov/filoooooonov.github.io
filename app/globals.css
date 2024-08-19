@@ -98,15 +98,11 @@
 }
 
 body {
-  background-color: hsla(221, 38%, 14%, 1);
-  background-image: radial-gradient(
-      at 23% 83%,
-      rgb(12, 18, 30) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 16% 8%, rgb(14, 23, 39) 0px, transparent 50%),
-    radial-gradient(at 89% 95%, rgb(23, 30, 49) 0px, transparent 50%),
-    radial-gradient(at 99% 10%, rgb(32, 60, 77) 0px, transparent 50%);
+  background-color: #1a1d1c;
+  background-image: radial-gradient(at 23% 83%, #1a1d1c 0px, transparent 50%),
+    radial-gradient(at 35% -80%, #fc3789 0px, transparent 40%),
+    radial-gradient(at 89% 95%, #1a1d1c 0px, transparent 50%),
+    radial-gradient(at 75% -80%, #ff9b06 0px, transparent 40%);
 }
 
 h1 {

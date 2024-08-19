@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <main className="max-w-[1024px] mx-auto px-6 md:px-4 lg:px-0 pb-40">
-      <Hero />
+      <Hero className="mb-[150px]" />
       <MyProjects />
       <Skills />
       <GetInTouch />
