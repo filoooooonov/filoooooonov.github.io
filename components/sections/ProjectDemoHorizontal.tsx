@@ -16,7 +16,7 @@ const ProjectDemoHorizontal = ({ project }: ProjectDemoHorizontalProps) => {
         </h3>
 
         <p>{project.descriptionShort}</p>
-        <div className="flex gap-2 mb-4 mt-8">
+        <div className="flex gap-2 mt-6 flex-wrap">
           {project.tags.map((tag, i) => {
             return (
               <div key={i} className="tag">
@@ -25,13 +25,12 @@ const ProjectDemoHorizontal = ({ project }: ProjectDemoHorizontalProps) => {
             );
           })}
         </div>
-        <p>Read more </p>
       </div>
-      <div className="col-span-2 pl-8">
+      <div className="col-span-2 sm:pl-8">
         <Image
           src={project.image}
           alt={`${project.title} image`}
-          className="rounded-xl"
+          className="mt-8 sm:mt-0 mx-auto rounded-xl"
         />
       </div>
     </div>

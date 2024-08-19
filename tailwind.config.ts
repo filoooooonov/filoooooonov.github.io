@@ -24,10 +24,10 @@ const config = {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       colors: {
-        primary: "#d48641",
+        primary: "#ecc722",
         primary_dark: "#4d4038",
         secondary: "#d4dae9",
-        box: "#2c3f542a",
+        box: "#212423",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

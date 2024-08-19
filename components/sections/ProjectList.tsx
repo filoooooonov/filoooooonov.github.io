@@ -43,14 +43,4 @@ export const projects = [
     descriptionLong:
       "Pecto is a language learning app for learning Finnish language that is still in development. My job in this project is to design the user interface of the app, as well as its color scheme and layout.",
   },
-  {
-    title: "Mathematical Investigation of Gradient Descent",
-    image: mathIAImg,
-    category: "datascience",
-    tags: ["PYTHON", "SCIKIT-LEARN", "JUPYTER"],
-    descriptionShort:
-      "My high school mathematics exploration about the gradient descent algorithm.",
-    descriptionLong:
-      "My high school mathematics exploration about the gradient descent algorithm. I explored how it can be applied in linear regression problems, how it is limited, as well as how it can be scaled to more complex cases. I recreated the algorithm, as well as its momentum accelerated version from scratch in Jupyter notebook.",
-  },
 ];

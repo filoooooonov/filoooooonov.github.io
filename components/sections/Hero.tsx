@@ -15,31 +15,39 @@ const Hero = ({ className }: HeroProps) => {
         <Image
           src={me}
           alt="Profile photo"
-          className="rounded-full aspect-square object-cover max-w-[150px] sm:max-w-[200px]"
+          className="rounded-full aspect-square object-cover max-w-[150px] sm:max-w-[200px] mx-auto lg:mx-0"
         />
-        <div className="space-y-2">
-          <h1 className="text-right my-8">Aleksei Filonov</h1>
-          <div className="flex justify-end">
+
+        {/* INFO ABOUT ME */}
+        <div className="space-y-2 max-w-[600px] md:mx-auto lg:mx-0">
+          <h1 className="md:text-center lg:text-right my-8">Aleksei Filonov</h1>
+
+          {/* LOCATION */}
+          <div className="flex lg:justify-end">
             <p className="text-lg flex items-center gap-2">
               <IoLocationSharp /> Helsinki, Finland
             </p>
           </div>
-          <div className="flex justify-end">
-            <p className="text-lg flex items-center gap-2">
-              <HiAcademicCap /> Studying for Bachelor&apos;s of Data Science at{" "}
-              <a
-                target="_blank"
-                href="https://www.aalto.fi/en/study-options/data-science-bachelor-of-science-technology-master-of-science-technology"
-                className="text-[#e9c41ebf] hover:text-[#ffd722e8] duration-200 cursor-pointer"
-              >
-                Aalto University
-              </a>
+          {/* UNIVERSITY */}
+          <div className="flex md:mx-auto lg:justify-end">
+            <p className="flex items-center gap-2">
+              <HiAcademicCap />
+              <span className="text-lg">
+                Studying for Bachelor&apos;s of Data Science at{" "}
+                <a
+                  target="_blank"
+                  href="https://www.aalto.fi/en/study-options/data-science-bachelor-of-science-technology-master-of-science-technology"
+                  className="block sm:inline text-[#e9c41ebf] hover:text-[#ffd722e8] duration-200 cursor-pointer"
+                >
+                  Aalto University
+                </a>
+              </span>
             </p>
           </div>
         </div>
       </div>
 
-      <p className="sm:bg-box sm:p-8 rounded-3xl sm:border-t border-[#45417136] border duration-300 hover:border-[#ffb40436] text-gray-200  p-4 w-[60%] mx-auto">
+      <p className="sm:bg-box sm:p-8 rounded-3xl  border-[#65647136] border duration-300 hover:border-[#ffb40436] text-gray-200 p-4 w-[90%] sm:w-[60%]  mx-auto">
         Hey! I&apos;m an incoming freshman at Aalto University pursuing a career
         in Data Science. I also develop and upgrade websites for businesses and
         help them acquire more clients. You can check out my latest projects

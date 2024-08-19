@@ -13,7 +13,7 @@ interface SkillsProps {
 const Skills = ({ className }: SkillsProps) => {
   return (
     <section id="skills" className={className}>
-      <h2 className="animate-fade-up">My tools and skills 🛠️</h2>
+      <h2 className="animate-fade-up">My skills 🛠️</h2>
       <div className="flex flex-wrap gap-4 mt-8 mb-[200px] ">
         <span className="group skill-box">
           <RiNextjsFill
