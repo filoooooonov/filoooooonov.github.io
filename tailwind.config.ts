@@ -26,7 +26,7 @@ const config = {
       colors: {
         primary: "#d48641",
         primary_dark: "#4d4038",
-        secondary: "#e3e3e3",
+        secondary: "#d4dae9",
         box: "#2c3f542a",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -55,6 +55,20 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(40px, -80px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-30px, 50px) scale(0.9)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -65,6 +79,7 @@ const config = {
         },
       },
       animation: {
+        blob: "blob 6s infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },

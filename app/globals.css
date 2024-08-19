@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -99,10 +108,10 @@
 
 body {
   background-color: #1a1d1c;
-  background-image: radial-gradient(at 23% 83%, #1a1d1c 0px, transparent 50%),
+  /* background-image: radial-gradient(at 23% 83%, #1a1d1c 0px, transparent 50%),
     radial-gradient(at 35% -80%, #fc3789 0px, transparent 40%),
     radial-gradient(at 89% 95%, #1a1d1c 0px, transparent 50%),
-    radial-gradient(at 75% -80%, #ff9b06 0px, transparent 40%);
+    radial-gradient(at 75% -80%, #ff9b06 0px, transparent 40%); */
 }
 
 h1 {
@@ -112,7 +121,11 @@ h2 {
   @apply text-xl text-white md:text-2xl lg:text-3xl font-medium;
 }
 h3 {
-  @apply text-lg text-white md:text-xl lg:text-2xl font-medium;
+  @apply text-base text-white md:text-lg lg:text-lg font-medium;
+}
+
+hr {
+  @apply border-stone-700 my-4;
 }
 
 p {
@@ -125,7 +138,7 @@ p {
 }
 
 .tag {
-  @apply bg-slate-800 rounded-full text-xs px-2 py-1 text-slate-500;
+  @apply bg-[#2d2d2d] rounded-full text-center text-xs px-3 py-1 text-[#a3a3a3];
 }
 
 .project-link {

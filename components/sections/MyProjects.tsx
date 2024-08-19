@@ -6,6 +6,7 @@ import pectoImg from "../../public/pecto.png";
 import { FaArrowRight } from "react-icons/fa6";
 import Link from "next/link";
 import { projects } from "@/components/sections/ProjectList";
+import ProjectDemoHorizontal from "./ProjectDemoHorizontal";
 
 interface MyProjectProps {
   className?: string;
@@ -15,7 +16,20 @@ const MyProjects = ({ className }: MyProjectProps) => {
   return (
     <section className={className}>
       <h2>My projects 🧑‍💻</h2>
-      <div className="flex flex-col lg:grid grid-cols-2 gap-10 mt-8 sm:bg-box sm:p-8 rounded-3xl sm:border-t border-[#45417136] ">
+
+      <hr className="hr" />
+
+      <div>
+        {projects.map((project, index) => {
+          return (
+            <React.Fragment key={index}>
+              <ProjectDemoHorizontal project={project} />
+            </React.Fragment>
+          );
+        })}
+      </div>
+
+      {/* <div className="flex flex-col lg:grid grid-cols-2 gap-10 mt-8 sm:bg-box sm:p-8 rounded-3xl sm:border-t border-[#45417136] ">
         {projects.map((project, index) => {
           return (
             <React.Fragment key={index}>
@@ -28,7 +42,7 @@ const MyProjects = ({ className }: MyProjectProps) => {
         <Link href="/projects" className="flex items-center gap-2">
           See all projects <FaArrowRight />
         </Link>
-      </button>
+      </button> */}
     </section>
   );
 };
