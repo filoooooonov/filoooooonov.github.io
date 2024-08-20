@@ -20,7 +20,7 @@ export const projects = [
     category: "webdev",
     tags: ["NEXT.JS", "REACT", "TAILWIND", "FIREBASE"],
     descriptionShort:
-      "A custom built business portfolio website for Kukibit, an IT services company based in Lappeenranta, Finland.",
+      "A custom built business portfolio website for Kukibit, an IT services company based in Lappeenranta, Finland. ",
     descriptionLong: "In progress . . .",
   },
   {

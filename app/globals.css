@@ -107,7 +107,7 @@
 }
 
 body {
-  background-color: #1a1d1c;
+  background-color: #141615;
   /* background-image: radial-gradient(at 23% 83%, #1a1d1c 0px, transparent 50%),
     radial-gradient(at 35% -80%, #fc3789 0px, transparent 40%),
     radial-gradient(at 89% 95%, #1a1d1c 0px, transparent 50%),
@@ -170,4 +170,22 @@ span {
 
 .nav-dropdown-link {
   @apply font-medium cursor-pointer hover:bg-[#142035] rounded-md  transition duration-200;
+}
+
+.main:after {
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+  /* background-color: red; */
+
+  position: fixed;
+  opacity: 0.02;
+  z-index: 10;
 }
