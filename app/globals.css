@@ -183,8 +183,6 @@ span {
   height: 100vh;
   content: "";
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
-  /* background-color: red; */
-
   position: fixed;
   opacity: 0.02;
   z-index: 10;

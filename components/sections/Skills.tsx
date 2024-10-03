@@ -5,6 +5,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiDjango } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { FaPython } from "react-icons/fa";
+import { DiScala } from "react-icons/di";
 
 interface SkillsProps {
   className?: string;
@@ -56,6 +57,13 @@ const Skills = ({ className }: SkillsProps) => {
             size={30}
           />
           Python
+        </span>
+        <span className="group skill-box">
+          <DiScala
+            className="group-hover:fill-primary transition duration-200"
+            size={30}
+          />
+          Scala
         </span>
       </div>
     </section>

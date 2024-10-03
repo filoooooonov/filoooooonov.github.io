@@ -33,7 +33,7 @@ const Hero = ({ className }: HeroProps) => {
             <p className="flex items-center gap-2">
               <HiAcademicCap />
               <span className="text-lg">
-                Studying for Bachelor&apos;s of Data Science at{" "}
+                Studying Data Science at{" "}
                 <a
                   target="_blank"
                   href="https://www.aalto.fi/en/study-options/data-science-bachelor-of-science-technology-master-of-science-technology"
@@ -48,32 +48,11 @@ const Hero = ({ className }: HeroProps) => {
       </div>
 
       <p className="sm:bg-box sm:p-8 rounded-3xl  border-[#65647136] border duration-300 hover:border-[#ffb40436] text-gray-200 p-4 w-[90%] sm:w-[60%]  mx-auto">
-        Hey! I&apos;m an incoming freshman at Aalto University pursuing a career
-        in Data Science. I also develop and upgrade websites for businesses and
-        help them acquire more clients. You can check out my latest projects
-        below!
+        Hey! I&apos;m a Data Science student at Aalto University who develops
+        websites in his free time. Speaking of that, I focus on creating and
+        upgrading websites for businesses to help them acquire more clients. You
+        can check out my latest projects below!
       </p>
-
-      {/* <div className="flex flex-col sm:flex-row justify-evenly gap-6 mt-12">
-        <a
-          href="https://www.linkedin.com/in/aleksei-filonov"
-          target="_blank"
-          className="button flex items-center gap-2"
-        >
-          Linkedin
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://github.com/filoooooonov"
-          target="_blank"
-          className="hidden sm:flex button  items-center gap-2"
-        >
-          Github <FaGithub />
-        </a>
-        <Link href="#contacts" className="button">
-          Contact me
-        </Link>
-      </div> */}
     </section>
   );
 };
