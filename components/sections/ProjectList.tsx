@@ -1,4 +1,4 @@
-import kukibitImg from "@/public/kukibit_preview.png";
+import kukibitImg from "@/public/kukibit_img.png";
 import ruokascraperImg from "@/public/ruokascraper.png";
 import ikigaiaImg from "@/public/ikigaia.png";
 import { StaticImageData } from "next/image";

@@ -38,11 +38,13 @@ const ProjectDemoHorizontal = ({ project }: ProjectDemoHorizontalProps) => {
       </div>
 
       <div className="col-span-2 sm:pl-8">
-        <Image
-          src={project.image}
-          alt={`${project.title} image`}
-          className="mt-8 sm:mt-0 mx-auto rounded-xl"
-        />
+        <a href={project.link} target="_blank" className="cursor-pointer">
+          <Image
+            src={project.image}
+            alt={`${project.title} image`}
+            className="mt-8 sm:mt-0 mx-auto rounded-xl"
+          />
+        </a>
       </div>
     </div>
   );
