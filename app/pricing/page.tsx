@@ -122,7 +122,17 @@ export default function PortfolioPricing() {
                   Which option is best for me?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Yes. It adheres to the WAI-ARIA design pattern.
+                  <p>
+                    The <span className="text-primary">Basic plan</span> is best
+                    for simple portfolio websites that do not require any
+                    frequent changes in the future. If you know that your
+                    website will not need any changes in the future and if it is
+                    supposed to be a simple portfolio, the{" "}
+                    <span className="text-primary">Basic plan</span> is best for
+                    you. However, if you plan on changing text or images in the
+                    website on a daily or weekly basis, consider the{" "}
+                    <span className="text-primary">Advanced plan</span>.
+                  </p>
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
