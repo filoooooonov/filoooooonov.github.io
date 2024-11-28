@@ -187,3 +187,9 @@ span {
   opacity: 0.02;
   z-index: 10;
 }
+
+p,
+li,
+span {
+  @apply text-neutral-300;
+}
