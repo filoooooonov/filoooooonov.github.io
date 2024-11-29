@@ -193,3 +193,19 @@ li,
 span {
   @apply text-neutral-300;
 }
+
+.text-link {
+  @apply text-primary cursor-pointer hover:text-primary/90 duration-300;
+}
+
+.example-link {
+  @apply absolute bottom-6 left-6 text-link bg-amber-800/10 hover:bg-amber-700/20 py-2 px-6 text-sm rounded-md;
+}
+
+.example-link-disabled {
+  @apply absolute bottom-6 left-6 text-link bg-amber-800/10  py-2 px-6 text-sm rounded-md;
+}
+
+.button-primary {
+  @apply bg-primary text-black rounded-md px-6 py-3 text-sm font-semibold hover:bg-white duration-300;
+}

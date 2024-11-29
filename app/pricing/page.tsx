@@ -6,6 +6,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Link from "next/link";
+import ContactPopup from "@/components/ui/contact-popup";
 
 export default function PortfolioPricing() {
   return (
@@ -56,12 +58,19 @@ export default function PortfolioPricing() {
                     </li>
                   </ul>
                 </div>
+                <a
+                  href="https://ikigaia.fi"
+                  target="_blank"
+                  className="example-link"
+                >
+                  Example
+                </a>
               </div>
               {/* Pro Tier */}
               <div className="relative w-full  overflow-hidden rounded-lg border border-primary/10 bg-primary/[0.01] hover:bg-primary/[0.02] duration-300 hover:border-primary">
-                <div className="p-8">
+                <div className="p-8 pb-28">
                   <h3 className="text-xl font-semibold text-primary">Pro</h3>
-                  <p className="mt-4 text-3xl font-bold text-white">700-800€</p>
+                  <p className="mt-4 text-3xl font-bold text-white">800€</p>
                   <p className="mt-2 text-sm text-zinc-400">One-time payment</p>
                   <ul className="mt-8 space-y-4 text-base text-zinc-300">
                     <li className="flex gap-x-2 items-center text-sm">
@@ -74,9 +83,12 @@ export default function PortfolioPricing() {
                     </li>
                     <li className="flex gap-x-2 items-center text-sm">
                       <Check className="h-5 w-5 flex-none text-primary" />
-                      Dynamic elements
+                      Multiple languages
                     </li>
-
+                    <li className="flex gap-x-2 items-center text-sm">
+                      <Check className="h-5 w-5 flex-none text-primary" />
+                      Light/dark theme
+                    </li>
                     <li className="flex gap-x-2 items-center  text-sm">
                       <Check className="h-5 w-5 flex-none text-primary" />
                       Third party integrations
@@ -85,11 +97,22 @@ export default function PortfolioPricing() {
                       <Check className="h-5 w-5 flex-none text-primary" />
                       Google Analytics
                     </li>
+                    <li className="flex gap-x-2 items-center  text-sm">
+                      <Check className="h-5 w-5 flex-none text-primary" />
+                      Cookie management
+                    </li>
                   </ul>
                 </div>
+                <a
+                  href="https://kukibit.fi"
+                  target="_blank"
+                  className="example-link"
+                >
+                  Example
+                </a>
               </div>
               {/* Advanced Tier */}
-              <div className="relative w-full  overflow-hidden rounded-lg border border-primary/10 bg-primary/[0.01] hover:bg-primary/[0.02] duration-300 hover:border-primary">
+              <div className="relative w-full overflow-hidden rounded-lg border border-primary/10 bg-primary/[0.01] hover:bg-primary/[0.02] duration-300 hover:border-primary">
                 <div className="p-8">
                   <h3 className="text-xl font-semibold text-primary">
                     Advanced
@@ -116,57 +139,87 @@ export default function PortfolioPricing() {
                 </div>
               </div>
             </div>
-            <Accordion type="single" collapsible>
-              <AccordionItem value="item-1">
-                <AccordionTrigger>
-                  Which option is best for me?
-                </AccordionTrigger>
-                <AccordionContent>
-                  <p>
-                    The <span className="text-primary">Basic plan</span> is best
-                    for simple portfolio websites that do not require any
-                    frequent changes in the future. If you know that your
-                    website will not need any changes in the future and if it is
-                    supposed to be a simple portfolio, the{" "}
-                    <span className="text-primary">Basic plan</span> is best for
-                    you. However, if you plan on changing text or images in the
-                    website on a daily or weekly basis, consider the{" "}
-                    <span className="text-primary">Advanced plan</span>.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-2">
-                <AccordionTrigger>What is the admin panel?</AccordionTrigger>
-                <AccordionContent>
-                  Yes. It adheres to the WAI-ARIA design pattern.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-3">
-                <AccordionTrigger>Smth</AccordionTrigger>
-                <AccordionContent>
-                  Yes. It adheres to the WAI-ARIA design pattern.
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
+            <div className="flex justify-center flex-col gap-4">
+              <h2 className="text-center mt-12 mb-4">
+                Got an idea or want to ask?
+              </h2>
+              <ContactPopup />
+            </div>
           </section>
 
-          {/* <section className="border-l-2 border-primary pl-6">
-            <h2 className="text-2xl font-semibold text-white">What you get:</h2>
-            <ul className="mt-4 space-y-3 text-zinc-300">
-              <li className="flex items-start gap-3">
-                <Check className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                <span>2-3 main pages</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Check className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                <span>High website performance score</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Check className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
-                <span>Great SEO optimization</span>
-              </li>
-            </ul>
-          </section> */}
+          <Accordion id="faq" type="single" collapsible>
+            <h2>FAQ</h2>
+            <AccordionItem value="item-1">
+              <AccordionTrigger>
+                Which plan is the best for me?
+              </AccordionTrigger>
+              <AccordionContent>
+                <p>
+                  The <span className="text-primary">Basic plan</span> is the
+                  best for simple portfolio websites that do not require any
+                  frequent changes in the future. Such websites work as business
+                  cards showcasing the information about services and contact
+                  info.
+                </p>
+                <p>
+                  If your website does not require frequent changes but you need
+                  a contact form, Google Analytics, access to a database or any
+                  other third-party integration, the{" "}
+                  <span className="text-primary">Pro plan</span> is the best for
+                  you.
+                </p>
+                <p>
+                  If you know that your website will need frequent changes
+                  (every day or every week) after it is developed, then consider
+                  the <span className="text-primary">Advanced plan</span>.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger>What is the admin panel?</AccordionTrigger>
+              <AccordionContent>
+                <p>
+                  The admin panel is a content management system (CMS), or a
+                  separate website where you or the content manager can change
+                  text, images, metadata or any other content of the website.
+                  The admin panel is provided by{" "}
+                  <a
+                    href="https://prismic.io"
+                    target="_blank"
+                    className="text-link"
+                  >
+                    Prismic
+                  </a>{" "}
+                  and its cheapest price plan is for 15€ per month for 3 content
+                  managers. This means that 15€/mo is an additional fee on top
+                  of the final price of the website that is paid directly to
+                  Prismic.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger>Do I need an admin panel?</AccordionTrigger>
+              <AccordionContent>
+                <p>
+                  You need an admin panel only if your website requires frequent
+                  changes in the future. For example, if you need to make
+                  changes every day or every week, an admin panel is the easiest
+                  way to go about it. Without an admin panel, you cannot
+                  directly change the contents because it is done by changing
+                  the code. If you make changes on a monthly basis, the admin
+                  panel is probably not worth it.
+                </p>
+                <p>
+                  Note: if you still feel uncertain about the admin panel, feel
+                  free to{" "}
+                  <Link href="/pricing/#contactme" className="text-link">
+                    contact me
+                  </Link>
+                  !
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
 
           {/* Admin Features */}
           <section className="p-6 bg-zinc-800/50 border-2 border-zinc-800 rounded-lg">
