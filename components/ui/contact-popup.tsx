@@ -52,7 +52,7 @@ export default function ContactPopup() {
               transition={{ duration: 0.2 }}
             >
               <h2 className="text-lg font-semibold mb-8">
-                Let's find the best deal for you!
+                Let&apos;s find the best deal for you!
               </h2>
               <div className="grid gap-4">
                 {contactMethods.map((method) => (
