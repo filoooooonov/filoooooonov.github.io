@@ -18,10 +18,12 @@ export default function Home() {
   const isVisibleSkills = useIsVisible(refSkills);
 
   return (
-    <main className="relative main overflow-hidden md:overflow-visible">
-      <div className="z-10 overlay"></div>
+    <main className="relative main overflow-hidden md:overflow-visible bg-zinc-900">
+      {/* Noisy overlay */}
+      {/* <div className="z-10 overlay"></div> */}
 
       <div className="max-w-[1024px] mx-auto px-6 md:px-4 lg:px-0 pb-40">
+        {/* Blury background */}
         <div className="relative z-0">
           <div className="absolute -top-16 -left-32 w-[300px] h-[300px] bg-[#32222f] rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
           <div className="absolute -top-56 left-8 w-[500px] h-[500px] bg-[#FC378A] rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-blob"></div>

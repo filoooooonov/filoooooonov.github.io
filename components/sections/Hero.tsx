@@ -1,8 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import me from "../../public/me.jpg";
+import me from "@/public/my_image.jpg";
 import { IoLocationSharp } from "react-icons/io5";
 import { HiAcademicCap } from "react-icons/hi2";
+import ContactPopup from "../ui/contact-popup";
+import Link from "next/link";
 
 interface HeroProps {
   className?: string;
@@ -47,12 +49,18 @@ const Hero = ({ className }: HeroProps) => {
         </div>
       </div>
 
-      <p className="sm:bg-box sm:p-8 rounded-3xl  border-[#65647136] border duration-300 hover:border-[#ffb40436] text-gray-200 p-4 w-[90%] sm:w-[60%]  mx-auto">
+      <p className="sm:bg-zinc-800/30 sm:p-8 rounded-xl border-zinc-800/60 border-2 duration-300 hover:border-[#ffb40436] text-gray-200 p-4 w-[90%] sm:w-[60%]  mx-auto">
         Hey! I&apos;m a Data Science student at Aalto University who develops
         websites in his free time. Speaking of that, I focus on creating and
         upgrading websites for businesses to help them acquire more clients. You
         can check out my latest projects below!
       </p>
+      <div className="flex flex-row gap-4 justify-center mt-12">
+        <ContactPopup text="Contact me!" className="button-primary w-max" />
+        <Link href="/pricing" className="button-secondary">
+          Pricing
+        </Link>
+      </div>
     </section>
   );
 };

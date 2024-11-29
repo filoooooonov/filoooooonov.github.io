@@ -1,5 +1,6 @@
 "use client";
 
+import clsx from "clsx";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
@@ -9,13 +10,18 @@ import GmailIcon from "@/public/gmail_icon.png";
 import TelegramIcon from "@/public/telegram_icon.webp";
 import WhatsAppIcon from "@/public/whatsapp_icon.webp";
 
-export default function ContactPopup() {
+interface ContactPopupProps {
+  className?: string;
+  text: string;
+}
+
+export default function ContactPopup({ className, text }: ContactPopupProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const contactMethods = [
     {
       name: "Email",
-      icon: <Image src={GmailIcon} alt="Gmail Icon" width={16} height={16} />, // Gmail Icon
+      icon: <Image src={GmailIcon} alt="Gmail Icon" width={16} height={16} />,
       href: "mailto:alexfiloonov@gmail.com",
     },
     {
@@ -37,7 +43,7 @@ export default function ContactPopup() {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <button className="button-primary w-max mx-auto">Contact me!</button>
+        <button className={clsx("", className)}>{text}</button>
       </DialogTrigger>
       <AnimatePresence>
         {isOpen && (
@@ -46,9 +52,9 @@ export default function ContactPopup() {
             forceMount
           >
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.9 }}
+              exit={{ opacity: 0, scale: 0.98 }}
               transition={{ duration: 0.2 }}
             >
               <h2 className="text-lg font-semibold mb-8">
@@ -58,7 +64,7 @@ export default function ContactPopup() {
                 {contactMethods.map((method) => (
                   <motion.div
                     key={method.name}
-                    whileHover={{ scale: 1.01 }}
+                    whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     <Button

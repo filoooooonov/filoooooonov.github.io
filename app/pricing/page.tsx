@@ -1,4 +1,4 @@
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, ChevronLeft } from "lucide-react";
 import { FaGears } from "react-icons/fa6";
 import {
   Accordion,
@@ -14,6 +14,12 @@ export default function PortfolioPricing() {
     <div className="min-h-screen bg-zinc-900 text-zinc-100">
       {/* Hero */}
       <div className="mx-auto max-w-5xl px-4 pt-20 pb-16">
+        <Link
+          href="/"
+          className="text-lg text-zinc-500 hover:text-zinc-200 flex items-center gap-2 duration-300 mb-8"
+        >
+          <ChevronLeft /> Home
+        </Link>
         <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
           Pricing
         </h1>
@@ -143,7 +149,10 @@ export default function PortfolioPricing() {
               <h2 className="text-center mt-12 mb-4">
                 Got an idea or want to ask?
               </h2>
-              <ContactPopup />
+              <ContactPopup
+                text="Contact me!"
+                className="button-primary w-max mx-auto"
+              />
             </div>
           </section>
 
