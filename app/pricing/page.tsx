@@ -1,4 +1,4 @@
-import { Check, ArrowRight, ChevronLeft } from "lucide-react";
+import { Check, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { FaGears } from "react-icons/fa6";
 import {
   Accordion,
@@ -58,18 +58,17 @@ export default function PortfolioPricing() {
                       <Check className="h-5 w-5 flex-none text-primary" />
                       Simple text/image portfolio
                     </li>
-                    <li className="flex gap-x-2 items-center text-sm">
-                      <Check className="h-5 w-5 flex-none text-primary" />
-                      No API elements
-                    </li>
                   </ul>
                 </div>
                 <a
                   href="https://ikigaia.fi"
                   target="_blank"
-                  className="example-link"
+                  className="relative group inline-flex items-center example-link"
                 >
                   Example
+                  <span className="ml-1 transition-transform duration-300 ease-in-out group-hover:translate-x-1">
+                    <ChevronRight className="w-4 h-4 text-primary" />
+                  </span>
                 </a>
               </div>
               {/* Pro Tier */}
@@ -112,9 +111,12 @@ export default function PortfolioPricing() {
                 <a
                   href="https://kukibit.fi"
                   target="_blank"
-                  className="example-link"
+                  className="relative group inline-flex items-center example-link"
                 >
                   Example
+                  <span className="ml-1 transition-transform duration-300 ease-in-out group-hover:translate-x-1">
+                    <ChevronRight className="w-4 h-4 text-primary" />
+                  </span>
                 </a>
               </div>
               {/* Advanced Tier */}
@@ -341,16 +343,6 @@ export default function PortfolioPricing() {
               </li>
             </ul>
           </section>
-        </div>
-
-        {/* CTA */}
-        <div className="mt-16 text-center">
-          <a
-            href="mailto:alexfiloonov@gmail.com"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-8 py-1 text-lg font-medium transition duration-300 text-black hover:bg-amber-400"
-          >
-            Email me
-          </a>
         </div>
       </div>
     </div>

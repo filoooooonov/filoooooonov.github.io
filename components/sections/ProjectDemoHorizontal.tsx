@@ -42,7 +42,7 @@ const ProjectDemoHorizontal = ({ project }: ProjectDemoHorizontalProps) => {
           <Image
             src={project.image}
             alt={`${project.title} image`}
-            className="mt-8 sm:mt-0 mx-auto rounded-xl"
+            className="mt-8 sm:mt-0 mx-auto rounded-md"
           />
         </a>
       </div>

@@ -25,10 +25,12 @@ export default function Home() {
       <div className="max-w-[1024px] mx-auto px-6 md:px-4 lg:px-0 pb-40">
         {/* Blury background */}
         <div className="relative z-0">
-          <div className="absolute -top-16 -left-32 w-[300px] h-[300px] bg-[#32222f] rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+          <div className="absolute top-12 -left-24 w-[300px] h-[300px] bg-[#ffbd22e3] rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
           <div className="absolute -top-56 left-8 w-[500px] h-[500px] bg-[#FC378A] rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-blob"></div>
           <div className="absolute -top-56 left-48 w-[500px] h-[500px] bg-[#dda8ff] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000"></div>
-          <div className="absolute -top-56 -right-16 w-[600px] h-[600px] bg-[#ff8b1f] rounded-full mix-blend-multiply filter blur-3xl opacity-15 animate-blob animation-delay-2000"></div>
+          <div className="absolute -top-56 -right-16 w-[600px] h-[600px] bg-[#ffa21f] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+          <div className="absolute -top-56 right-24 w-[500px] h-[500px] bg-[#963a85] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+          <div className="absolute top-16 -right-48 w-[300px] h-[300px] bg-[#642559] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
         </div>
 
         <Hero className="relative z-10 mb-[150px]" />
