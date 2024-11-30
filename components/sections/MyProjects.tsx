@@ -9,9 +9,7 @@ interface MyProjectProps {
 const MyProjects = ({ className }: MyProjectProps) => {
   return (
     <section className={className}>
-      <h2>My projects 🧑‍💻</h2>
-
-      <hr className="hr" />
+      <h2 className="mb-16">My projects 🧑‍💻</h2>
 
       <div>
         {projects.map((project, index) => {
