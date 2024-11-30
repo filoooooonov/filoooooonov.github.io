@@ -139,7 +139,7 @@ span {
 }
 
 .tag {
-  @apply bg-[#2d2d2d] rounded-full text-center text-xs px-3 py-1 text-[#a3a3a3];
+  @apply bg-zinc-800/40 rounded-full text-center text-xs px-3 py-1 text-zinc-500;
 }
 
 .project-link {
@@ -212,4 +212,8 @@ span {
 
 .button-secondary {
   @apply bg-zinc-800/20 border-2 border-zinc-700 text-zinc-300 hover:border-primary hover:text-primary rounded-md px-6 py-3 text-sm font-semibold duration-300;
+}
+
+.button-secondary-disabled {
+  @apply cursor-not-allowed border-2 border-zinc-800 text-zinc-600 rounded-md px-6 py-3 text-sm font-semibold;
 }

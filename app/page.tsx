@@ -34,7 +34,7 @@ export default function Home() {
         </div>
 
         <Hero className="relative z-10 mb-[150px]" />
-        <MyProjects className="relative z-10" />
+        <MyProjects className="relative z-10 mb-40" />
         <Skills className="relative z-10" />
         <GetInTouch className="relative z-10" />
       </div>
