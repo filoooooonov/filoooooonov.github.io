@@ -58,7 +58,7 @@ const Hero = ({ className }: HeroProps) => {
       <div className="flex flex-row gap-4 justify-center mt-12">
         <ContactPopup text="Contact me!" className="button-primary w-max" />
 
-        <Link href="/pricing" className="button-secondary-disabled">
+        <Link href="/" className="button-secondary-disabled">
           Pricing (soon)
         </Link>
       </div>
