@@ -37,7 +37,7 @@ export default function PortfolioPricing() {
           </div>
 
           <section className="space-y-8">
-            <h2>Choose your pricing plan</h2>
+            <h2>Choose your website plan</h2>
             <div className="flex flex-col md:grid md:grid-cols-3 gap-8">
               {/* Basic Tier */}
               <div className="relative w-full overflow-hidden rounded-lg border border-primary/10 bg-primary/[0.01] hover:bg-primary/[0.02] duration-300 hover:border-primary">

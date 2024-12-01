@@ -50,16 +50,15 @@ const Hero = ({ className }: HeroProps) => {
       </div>
 
       <p className="sm:bg-zinc-800/30 sm:p-8 rounded-xl border-zinc-800/60 border-2 duration-300 hover:border-[#ffb40436] text-gray-200 p-4 w-[90%] sm:w-[60%]  mx-auto">
-        Hey! I&apos;m a Data Science student at Aalto University who develops
-        websites in his free time. Speaking of that, I focus on creating and
-        upgrading websites for businesses to help them acquire more clients. You
-        can check out my latest projects below!
+        Hey! I&apos;m a Data Science student at Aalto University. Alongside my
+        studies, I focus on creating and upgrading websites for businesses to
+        help them acquire more clients and boost their online presence.
       </p>
       <div className="flex flex-row gap-4 justify-center mt-12">
-        <ContactPopup text="Contact me!" className="button-primary w-max" />
+        <ContactPopup text="Get in touch!" className="button-primary w-max" />
 
         <Link href="/" className="button-secondary-disabled">
-          Pricing (soon)
+          Website pricing (soon)
         </Link>
       </div>
     </section>
