@@ -1,7 +1,7 @@
 import kukibitImg from "@/public/kukibit_img.png";
 import ruokascraperImg from "@/public/ruokascraper.png";
 import ikigaiaImg from "@/public/ikigaia.png";
-import timelinerImg from "@/public/timeliner_img.png";
+import timelinerImg from "@/public/timeliner-img.webp";
 import { StaticImageData } from "next/image";
 
 export interface Project {
