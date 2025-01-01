@@ -34,7 +34,7 @@ export default function ContactPopup({ className, text }: ContactPopupProps) {
     {
       name: "WhatsApp",
       icon: (
-        <Image src={WhatsAppIcon} alt="WhatsApp Icon" width={24} height={20} />
+        <Image src={WhatsAppIcon} alt="WhatsApp Icon" width={28} height={20} />
       ), // WhatsApp Icon
       href: "https://wa.me/+358414771601",
     },
@@ -48,7 +48,7 @@ export default function ContactPopup({ className, text }: ContactPopupProps) {
       <AnimatePresence>
         {isOpen && (
           <DialogContent
-            className="sm:max-w-[425px] bg-zinc-900 border-2 border-zinc-800 !rounded-xl"
+            className="w-[80%] sm:max-w-[425px] bg-zinc-900 border-2 border-zinc-800 !rounded-xl"
             forceMount
           >
             <motion.div

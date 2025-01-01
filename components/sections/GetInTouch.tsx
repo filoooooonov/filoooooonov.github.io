@@ -9,7 +9,9 @@ interface GetInTouchProps {
 const GetInTouch = ({ className }: GetInTouchProps) => {
   return (
     <section id="contacts" className={className}>
-      <h2 id="contacts">Get in touch with me 👋</h2>
+      <h2 id="contacts" className="mb-8 sm:mb-16">
+        Get in touch with me 👋
+      </h2>
       <div className="mt-8">
         <ul>
           <li className="flex flex-col">

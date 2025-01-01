@@ -18,7 +18,7 @@ export default function Home() {
   const isVisibleSkills = useIsVisible(refSkills);
 
   return (
-    <main className="relative main overflow-hidden md:overflow-visible bg-zinc-900">
+    <main className="relative main overflow-hidden bg-zinc-900">
       {/* Noisy overlay */}
       {/* <div className="z-10 overlay"></div> */}
 
@@ -30,10 +30,10 @@ export default function Home() {
           <div className="absolute -top-56 left-48 w-[500px] h-[500px] bg-[#dda8ff] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000"></div>
           <div className="absolute -top-56 -right-16 w-[600px] h-[600px] bg-[#ffa21f] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
           <div className="absolute -top-56 right-24 w-[500px] h-[500px] bg-[#963a85] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
-          <div className="absolute top-16 -right-48 w-[300px] h-[300px] bg-[#642559] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+          {/* <div className="absolute top-16 -right-48 w-[300px] h-[300px] bg-[#642559] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div> */}
         </div>
 
-        <Hero className="relative z-10 mb-[150px]" />
+        <Hero className="relative z-10 mb-[150px] " />
         <MyProjects className="relative z-10 mb-40" />
         <Skills className="relative z-10" />
         <GetInTouch className="relative z-10" />

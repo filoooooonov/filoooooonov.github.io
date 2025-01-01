@@ -11,7 +11,7 @@ interface ProjectDemoHorizontalProps {
 const ProjectDemoHorizontal = ({ project }: ProjectDemoHorizontalProps) => {
   return (
     <div className="group flex flex-col sm:grid grid-cols-2 mb-16">
-      <div className="">
+      <div className="order-2 sm:order-1">
         <h3 className="mb-4 group-hover:text-primary transition duration-200">
           <a
             href={project.link}
@@ -37,7 +37,7 @@ const ProjectDemoHorizontal = ({ project }: ProjectDemoHorizontalProps) => {
         </div>
       </div>
 
-      <div className="sm:pl-8">
+      <div className="order-1 sm:order-2 sm:pl-8 pb-8 sm:pb-0">
         <a href={project.link} target="_blank" className="cursor-pointer">
           <Image
             src={project.image}

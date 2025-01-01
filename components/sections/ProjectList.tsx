@@ -18,7 +18,7 @@ export const projects = [
   {
     title: "Timeliner.",
     image: timelinerImg,
-    tags: ["NEXT.JS", "REACT", "TAILWIND", "VERCEL", "SUPABASE"],
+    tags: ["NEXT.JS", "REACT", "TAILWIND", "VERCEL", "MONGODB"],
     descriptionShort:
       "A place for startups and companies to share their stories from day one. In active development.",
   },
