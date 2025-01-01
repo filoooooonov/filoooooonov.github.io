@@ -55,11 +55,11 @@ const Hero = ({ className }: HeroProps) => {
         help them acquire more clients and boost their online presence.
       </p>
       <div className="flex flex-row gap-4 justify-center mt-12">
-        <ContactPopup text="Get in touch!" className="button-primary w-max" />
+        <ContactPopup text="Get in touch" className="button-primary w-max" />
 
-        <Link href="/" className="button-secondary-disabled">
+        {/* <Link href="/" className="button-secondary-disabled">
           Website pricing (soon)
-        </Link>
+        </Link> */}
       </div>
     </section>
   );

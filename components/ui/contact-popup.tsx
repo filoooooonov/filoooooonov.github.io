@@ -48,17 +48,17 @@ export default function ContactPopup({ className, text }: ContactPopupProps) {
       <AnimatePresence>
         {isOpen && (
           <DialogContent
-            className="sm:max-w-[425px] bg-zinc-900 border-2 border-zinc-800"
+            className="sm:max-w-[425px] bg-zinc-900 border-2 border-zinc-800 !rounded-xl"
             forceMount
           >
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.98 }}
-              transition={{ duration: 0.2 }}
+              transition={{ duration: 0.4 }}
             >
               <h2 className="text-lg font-semibold mb-8">
-                Let&apos;s find the best deal for you!
+                Let&apos;s work together 🤝
               </h2>
               <div className="grid gap-4">
                 {contactMethods.map((method) => (

@@ -20,7 +20,7 @@ export const projects = [
     image: timelinerImg,
     tags: ["NEXT.JS", "REACT", "TAILWIND", "VERCEL", "SUPABASE"],
     descriptionShort:
-      "A place for start-ups and companies to share their stories from day one. In development.",
+      "A place for startups and companies to share their stories from day one. In active development.",
   },
   {
     title: "Website for IKIGAIA",
@@ -45,7 +45,7 @@ export const projects = [
     category: "webdev",
     tags: ["NEXT.JS", "REACT", "TAILWIND", "WEB SCRAPING", "FIREBASE"],
     descriptionShort:
-      "Ruokascraper is a price aggregator that helps you save money on groceries in Finnish S- and K-group stores. In development.",
+      "Ruokascraper is a price aggregator that helps you save money on groceries in Finnish S- and K-group stores. Paused.",
     descriptionLong:
       "Ruokascraper is a service that helps you save money and time on your groceries. You can input your grocery list and Ruokascraper will find the cheapest deals from K-Group and S-Group stores and sort them into two grocery lists, each for a separate store chain. Currently in development.",
   },
