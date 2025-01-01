@@ -33,7 +33,7 @@ export default function Home() {
           {/* <div className="absolute top-16 -right-48 w-[300px] h-[300px] bg-[#642559] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div> */}
         </div>
 
-        <Hero className="relative z-10 mb-[150px] " />
+        <Hero className="relative z-10 mb-[150px]" />
         <MyProjects className="relative z-10 mb-40" />
         <Skills className="relative z-10" />
         <GetInTouch className="relative z-10" />

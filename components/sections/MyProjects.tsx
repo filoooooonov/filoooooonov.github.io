@@ -9,7 +9,7 @@ interface MyProjectProps {
 const MyProjects = ({ className }: MyProjectProps) => {
   return (
     <section className={className}>
-      <h2 className="mb-8 sm:mb-16">My projects 🧑‍💻</h2>
+      <h2 className="mb-16 sm:mb-40">My projects 🧑‍💻</h2>
 
       <div>
         {projects.map((project, index) => {

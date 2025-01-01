@@ -3,14 +3,24 @@ import React from "react";
 
 import { Project } from "@/components/sections/ProjectList";
 import { RxOpenInNewWindow } from "react-icons/rx";
-
+import { motion } from "motion/react";
 interface ProjectDemoHorizontalProps {
   project: Project;
 }
 
 const ProjectDemoHorizontal = ({ project }: ProjectDemoHorizontalProps) => {
   return (
-    <div className="group flex flex-col sm:grid grid-cols-2 mb-16">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.3 }}
+      variants={{
+        visible: { opacity: 1, y: -50 },
+        hidden: { opacity: 0, y: 0 },
+      }}
+      className="group flex flex-col sm:grid grid-cols-2 mb-16"
+    >
       <div className="order-2 sm:order-1">
         <h3 className="mb-4 group-hover:text-primary transition duration-200">
           <a
@@ -46,7 +56,7 @@ const ProjectDemoHorizontal = ({ project }: ProjectDemoHorizontalProps) => {
           />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
