@@ -4,7 +4,7 @@ import me from "@/public/me.webp";
 import { IoLocationSharp } from "react-icons/io5";
 import { HiAcademicCap } from "react-icons/hi2";
 import ContactPopup from "../ui/contact-popup";
-import Link from "next/link";
+import { motion } from "motion/react";
 
 interface HeroProps {
   className?: string;
@@ -13,7 +13,17 @@ interface HeroProps {
 const Hero = ({ className }: HeroProps) => {
   return (
     <section className={className}>
-      <div className="flex flex-col lg:flex-row justify-between pt-[5vh] sm:pt-[12vh] pb-20 w-auto">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeInOut", delay: 0 }}
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: 20 },
+        }}
+        className="flex flex-col lg:flex-row justify-between pt-[5vh] sm:pt-[12vh] pb-20 w-auto"
+      >
         <Image
           src={me}
           alt="Profile photo"
@@ -47,29 +57,43 @@ const Hero = ({ className }: HeroProps) => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <p className="group sm:bg-zinc-800/30 sm:p-8 rounded-xl border-zinc-800/60 border-2  border-dashed duration-300 hover:border-[#ffb40436] text-gray-200 p-4 w-[90%] sm:w-[60%]  mx-auto">
-        Hey! I&apos;m a{" "}
-        <span className="group-hover:text-primary group-hover:font-medium duration-300">
-          Data Science
-        </span>{" "}
-        student at Aalto University. Alongside my studies, I focus on{" "}
-        <span className="group-hover:text-primary group-hover:font-medium duration-300">
-          creating and upgrading websites
-        </span>{" "}
-        for businesses to help them acquire more clients and{" "}
-        <span className="group-hover:text-primary group-hover:font-medium duration-300">
-          boost their online presence.
-        </span>
-      </p>
-      <div className="flex flex-row gap-4 justify-center mt-12">
-        <ContactPopup text="Get in touch" className="button-primary w-max" />
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeInOut", delay: 0.3 }}
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: 20 },
+        }}
+      >
+        <p className="group sm:bg-zinc-800/30 sm:p-8 rounded-xl border-zinc-800/60 border-2  border-dashed duration-300 hover:border-[#ffb40436] text-gray-200 p-4 w-[90%] sm:w-[60%]  mx-auto">
+          Hey! I&apos;m a{" "}
+          <span className="group-hover:text-primary group-hover:font-medium duration-300">
+            Data Science
+          </span>{" "}
+          student at Aalto University. Alongside my studies, I focus on{" "}
+          <span className="group-hover:text-primary group-hover:font-medium duration-300">
+            creating and upgrading websites
+          </span>{" "}
+          for businesses to help them acquire more clients and{" "}
+          <span className="group-hover:text-primary group-hover:font-medium duration-300">
+            boost their online presence.
+          </span>
+        </p>
+        <div className="flex flex-row gap-4 justify-center mt-12">
+          <ContactPopup
+            text="Get in touch"
+            className="button-primary select-none w-max"
+          />
 
-        {/* <Link href="/" className="button-secondary-disabled">
+          {/* <Link href="/" className="button-secondary-disabled">
           Website pricing (soon)
         </Link> */}
-      </div>
+        </div>
+      </motion.div>
     </section>
   );
 };

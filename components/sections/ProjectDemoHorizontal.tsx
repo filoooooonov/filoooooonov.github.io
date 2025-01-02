@@ -14,7 +14,7 @@ const ProjectDemoHorizontal = ({ project }: ProjectDemoHorizontalProps) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
       variants={{
         visible: { opacity: 1, y: -50 },
         hidden: { opacity: 0, y: 0 },

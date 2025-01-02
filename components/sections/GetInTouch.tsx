@@ -1,10 +1,39 @@
 "use client";
 
 import React from "react";
+import { motion } from "motion/react";
 
 interface GetInTouchProps {
   className?: string;
 }
+
+const contacts = [
+  {
+    title: "EMAIL",
+    link: "mailto:alexfiloonov@gmail.com",
+    displayText: "alexfiloonov@gmail.com",
+  },
+  {
+    title: "LINKEDIN",
+    link: "https://www.linkedin.com/in/aleksei-filonov",
+    displayText: "linkedin.com/in/aleksei-filonov",
+  },
+  {
+    title: "GITHUB",
+    link: "https://github.com/filoooooonov",
+    displayText: "filoooooonov",
+  },
+  {
+    title: "TELEGRAM",
+    link: "https://t.me/wheelsofsteel",
+    displayText: "@wheelsofsteel",
+  },
+  {
+    title: "INSTAGRAM",
+    link: "https://www.instagram.com/filo.oal/",
+    displayText: "@filo.oal",
+  },
+];
 
 const GetInTouch = ({ className }: GetInTouchProps) => {
   return (
@@ -14,57 +43,29 @@ const GetInTouch = ({ className }: GetInTouchProps) => {
       </h2>
       <div className="mt-8">
         <ul>
-          <li className="flex flex-col">
-            <span className="contact-title">EMAIL</span>
-            <a
-              href="mailto:alexfiloonov@gmail.com"
-              target="_blank"
-              className="contact-link"
+          {contacts.map((contact, index) => (
+            <motion.li
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.2,
+                ease: "easeInOut",
+                delay: index / 10,
+              }}
+              variants={{
+                visible: { opacity: 1, y: 5 },
+                hidden: { opacity: 0, y: 5 },
+              }}
+              key={index}
+              className="flex flex-col mt-4"
             >
-              alexfiloonov@gmail.com
-            </a>
-          </li>
-
-          <li className="mt-4 flex flex-col">
-            <span className="contact-title">LINKEDIN</span>
-            <a
-              href="https://www.linkedin.com/in/aleksei-filonov"
-              target="_blank"
-              className="contact-link"
-            >
-              in/aleksei-filonov
-            </a>
-          </li>
-          <li className="mt-4 flex flex-col">
-            <span className="contact-title">GITHUB</span>
-            <a
-              href="https://github.com/filoooooonov"
-              target="_blank"
-              className="contact-link"
-            >
-              filoooooonov
-            </a>
-          </li>
-          <li className="mt-4 flex flex-col">
-            <span className="contact-title">TELEGRAM</span>
-            <a
-              className="contact-link"
-              target="_blank"
-              href="https://t.me/wheelsofsteel"
-            >
-              @wheelsofsteel
-            </a>
-          </li>
-          <li className="mt-4 flex flex-col">
-            <span className="contact-title">INSTAGRAM</span>
-            <a
-              href="https://www.instagram.com/filo.oal/"
-              target="_blank"
-              className="contact-link"
-            >
-              @filo.oal
-            </a>
-          </li>
+              <span className="contact-title">{contact.title}</span>
+              <a href={contact.link} target="_blank" className="contact-link">
+                {contact.displayText}
+              </a>
+            </motion.li>
+          ))}
         </ul>
       </div>
     </section>
