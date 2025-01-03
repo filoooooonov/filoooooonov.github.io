@@ -1,5 +1,5 @@
-import kukibitImg from "@/public/kukibit_img.png";
-import ruokascraperImg from "@/public/ruokascraper.png";
+import kukibitImg from "@/public/kukibit_mockup.webp";
+import ruokascraperImg from "@/public/ruokascraper_mockup.webp";
 import ikigaiaImg from "@/public/ikigaia_mockup.webp";
 import timelinerImg from "@/public/timeliner_mockup.webp";
 import { StaticImageData } from "next/image";
