@@ -12,7 +12,16 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: "Aleksei Filonov",
-  description: "Aleksei Filonov",
+  description:
+    "I focus on creating and upgrading websites for businesses to help them acquire more clients and boost their online presence.",
+  keywords: [
+    "web development",
+    "client acquisition",
+    "online presence",
+    "data science",
+    "Aalto University",
+    "developer",
+  ],
 };
 
 export default function RootLayout({
