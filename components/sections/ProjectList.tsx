@@ -2,6 +2,8 @@ import kukibitImg from "@/public/kukibit_mockup.webp";
 import ruokascraperImg from "@/public/ruokascraper_mockup.webp";
 import ikigaiaImg from "@/public/ikigaia_mockup.webp";
 import timelinerImg from "@/public/timeliner_mockup.webp";
+import checkmapImg from "@/public/checkmap.png";
+import HCSImg from "@/public/HCS.png";
 import { StaticImageData } from "next/image";
 
 export interface Project {
@@ -15,6 +17,20 @@ export interface Project {
 }
 
 export const projects = [
+  {
+    title: "Checkmap",
+    image: checkmapImg,
+    tags: ["NEXT.JS", "REACT", "TAILWIND", "VERCEL", "MONGODB"],
+    descriptionShort:
+      "A tool for creating maps with custom markers and sharing them with others. Meant for anyone, be it for personal use, tourism or student associations. In active development.",
+  },
+  {
+    title: "Heavy Cleaning Services",
+    image: HCSImg,
+    tags: ["NEXT.JS", "REACT", "TAILWIND", "FIREBASE"],
+    descriptionShort:
+      "A website for a hand-wash cleaning company based in Helsinki, Finland. In development.",
+  },
   {
     title: "Timeliner.",
     image: timelinerImg,
