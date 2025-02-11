@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import me from "@/public/me.webp";
+import me from "@/public/me.jpeg";
 import { IoLocationSharp } from "react-icons/io5";
 import { HiAcademicCap } from "react-icons/hi2";
 import ContactPopup from "../ui/contact-popup";

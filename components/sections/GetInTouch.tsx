@@ -39,7 +39,7 @@ const GetInTouch = ({ className }: GetInTouchProps) => {
   return (
     <section id="contacts" className={className}>
       <h2 id="contacts" className="mb-8 sm:mb-16">
-        Get in touch with me 👋
+        Let's work together 🤝
       </h2>
       <div className="mt-8">
         <ul>

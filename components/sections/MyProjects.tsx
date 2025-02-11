@@ -31,7 +31,7 @@ const MyProjects = ({ className }: MyProjectProps) => {
         }}
         className="mb-16 sm:mb-40"
       >
-        My projects 🧑‍💻
+        Recent projects 🧑‍💻
       </motion.h2>
 
       <div>
