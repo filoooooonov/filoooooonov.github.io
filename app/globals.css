@@ -222,3 +222,15 @@ span {
 .button-secondary-disabled {
   @apply cursor-not-allowed border-2 border-stone-800 text-stone-600 rounded-md px-6 py-3 text-sm font-semibold;
 }
+
+.heading-1 {
+  @apply text-4xl font-bold mb-4;
+}
+
+.heading-2 {
+  @apply text-3xl font-semibold mb-3;
+}
+
+.heading-3 {
+  @apply text-2xl font-medium mb-2;
+}

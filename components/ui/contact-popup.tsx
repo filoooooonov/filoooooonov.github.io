@@ -48,7 +48,7 @@ export default function ContactPopup({ className, text }: ContactPopupProps) {
       <AnimatePresence>
         {isOpen && (
           <DialogContent
-            className="w-[80%] sm:max-w-[425px] bg-zinc-900 border-2 border-zinc-800 !rounded-xl"
+            className="w-[80%] sm:max-w-[425px] border-2 !rounded-xl"
             forceMount
           >
             <motion.div
@@ -69,7 +69,7 @@ export default function ContactPopup({ className, text }: ContactPopupProps) {
                   >
                     <Button
                       variant="destructive"
-                      className="w-full justify-start items-center bg-zinc-800/80 hover:bg-zinc-800/70"
+                      className="w-full justify-start items-center bg-neutral-800/80 hover:bg-neutral-800/70"
                       onClick={() => window.open(method.href, "_blank")}
                     >
                       <div className="mr-2 h-4 w-4">{method.icon}</div>

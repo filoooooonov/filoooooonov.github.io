@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "motion/react";
+import { TextEffect } from "../ui/text-effect";
 
 interface GetInTouchProps {
   className?: string;
@@ -36,23 +37,40 @@ const contacts = [
 ];
 
 const GetInTouch = ({ className }: GetInTouchProps) => {
+  const [trigger, setTrigger] = React.useState(false);
+
   return (
     <section id="contacts" className={className}>
-      <h2 id="contacts" className="mb-8 sm:mb-16">
+      <TextEffect
+        preset="fade-in-blur"
+        speedReveal={1.3}
+        speedSegment={0.3}
+        as="h2"
+        className="mb-16"
+        trigger={trigger}
+      >
         Let&lsquo;s work together 🤝
-      </h2>
+      </TextEffect>
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
-        transition={{
-          duration: 0.4,
-          ease: "easeInOut",
+        viewport={{
+          once: true,
+          margin: "0px 0px -100px 0px",
+          amount: 0.3,
         }}
+        transition={{ duration: 0.4, ease: "easeInOut" }}
         variants={{
-          visible: { opacity: 1, y: 0 },
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+              delayChildren: 0.2,
+            },
+          },
           hidden: { opacity: 0, y: 10 },
         }}
+        onAnimationStart={() => setTrigger(true)}
         className="mt-8"
       >
         <ul>

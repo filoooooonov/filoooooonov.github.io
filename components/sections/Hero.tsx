@@ -6,6 +6,7 @@ import { HiAcademicCap } from "react-icons/hi2";
 import ContactPopup from "../ui/contact-popup";
 import { motion } from "motion/react";
 import { Tilt } from "../ui/tilt";
+import { TextEffect } from "../ui/text-effect";
 
 interface HeroProps {
   className?: string;
@@ -33,7 +34,16 @@ const Hero = ({ className }: HeroProps) => {
 
         {/* INFO ABOUT ME */}
         <div className="space-y-2 max-w-[600px] md:mx-auto lg:mx-0">
-          <h1 className="md:text-center lg:text-right my-8">Aleksei Filonov</h1>
+          {/* <h1 className="md:text-center lg:text-right my-8">Aleksei Filonov</h1> */}
+          <TextEffect
+            preset="fade-in-blur"
+            speedReveal={1.1}
+            speedSegment={0.3}
+            as="h1"
+            className="md:text-center lg:text-right"
+          >
+            Aleksei Filonov
+          </TextEffect>
 
           {/* LOCATION */}
           <div className="flex lg:justify-end">
@@ -76,9 +86,9 @@ const Hero = ({ className }: HeroProps) => {
             <span className="group-hover:text-primary group-hover:font-medium duration-300">
               Data Science
             </span>{" "}
-            student at Aalto University. Alongside my studies, I focus on{" "}
+            student at Aalto University. Alongside my studies, I{" "}
             <span className="group-hover:text-primary group-hover:font-medium duration-300">
-              creating and upgrading websites
+              create and upgrade websites
             </span>{" "}
             for businesses to help them acquire more clients and{" "}
             <span className="group-hover:text-primary group-hover:font-medium duration-300">
