@@ -66,7 +66,7 @@ const ProjectDemo = ({ project }: ProjectDemoProps) => {
             })}
           </div>
 
-          <p className="text-zinc-300">{project.descriptionLong}</p>
+          <p className="text-stone-300">{project.descriptionLong}</p>
 
           <DialogClose asChild>
             <button

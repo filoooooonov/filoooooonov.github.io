@@ -18,7 +18,7 @@ export default function Home() {
   const isVisibleSkills = useIsVisible(refSkills);
 
   return (
-    <main className="relative main overflow-hidden bg-zinc-900">
+    <main className="relative main overflow-hidden">
       {/* Noisy overlay */}
       {/* <div className="z-10 overlay"></div> */}
 

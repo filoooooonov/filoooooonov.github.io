@@ -26,28 +26,30 @@ const Skills = ({ className }: SkillsProps) => {
   return (
     <section id="skills" className={className}>
       <h2 className="animate-fade-up mb-8 sm:mb-16">My skills 🛠️</h2>
-      <div className="flex flex-wrap gap-4 mt-8 mb-[200px] ">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.4,
+          ease: "easeInOut",
+        }}
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: 10 },
+        }}
+        className="flex flex-wrap gap-4 mt-8 mb-[200px] "
+      >
         {skills.map((skill, index) => (
-          <motion.span
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ duration: 0.2, ease: "easeInOut", delay: index / 10 }}
-            variants={{
-              visible: { opacity: 1, y: 5 },
-              hidden: { opacity: 0, y: 5 },
-            }}
-            key={index}
-            className="group skill-box"
-          >
+          <span key={index} className="group skill-box">
             <skill.icon
               className="group-hover:fill-primary transition duration-200"
               size={30}
             />
             {skill.name}
-          </motion.span>
+          </span>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

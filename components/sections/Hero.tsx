@@ -5,6 +5,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { HiAcademicCap } from "react-icons/hi2";
 import ContactPopup from "../ui/contact-popup";
 import { motion } from "motion/react";
+import { Tilt } from "../ui/tilt";
 
 interface HeroProps {
   className?: string;
@@ -69,20 +70,22 @@ const Hero = ({ className }: HeroProps) => {
           hidden: { opacity: 0, y: 20 },
         }}
       >
-        <p className="group sm:bg-zinc-800/30 sm:p-8 rounded-xl border-zinc-800/60 border-2  border-dashed duration-300 hover:border-[#ffb40436] text-gray-200 p-4 w-[90%] sm:w-[60%]  mx-auto">
-          Hey! I&apos;m a{" "}
-          <span className="group-hover:text-primary group-hover:font-medium duration-300">
-            Data Science
-          </span>{" "}
-          student at Aalto University. Alongside my studies, I focus on{" "}
-          <span className="group-hover:text-primary group-hover:font-medium duration-300">
-            creating and upgrading websites
-          </span>{" "}
-          for businesses to help them acquire more clients and{" "}
-          <span className="group-hover:text-primary group-hover:font-medium duration-300">
-            boost their online presence.
-          </span>
-        </p>
+        <Tilt rotationFactor={6}>
+          <p className="group sm:bg-stone-800/30 sm:p-8 rounded-xl border-stone-800/60 border-2  border-dashed duration-300 hover:border-[#ffb40421] text-gray-200 p-4 w-[90%] sm:w-[60%]  mx-auto">
+            Hey! I&apos;m a{" "}
+            <span className="group-hover:text-primary group-hover:font-medium duration-300">
+              Data Science
+            </span>{" "}
+            student at Aalto University. Alongside my studies, I focus on{" "}
+            <span className="group-hover:text-primary group-hover:font-medium duration-300">
+              creating and upgrading websites
+            </span>{" "}
+            for businesses to help them acquire more clients and{" "}
+            <span className="group-hover:text-primary group-hover:font-medium duration-300">
+              boost their online presence.
+            </span>
+          </p>
+        </Tilt>
         <div className="flex flex-row gap-4 justify-center mt-12">
           <ContactPopup
             text="Get in touch"
