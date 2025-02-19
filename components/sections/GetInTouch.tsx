@@ -41,33 +41,31 @@ const GetInTouch = ({ className }: GetInTouchProps) => {
       <h2 id="contacts" className="mb-8 sm:mb-16">
         Let&lsquo;s work together 🤝
       </h2>
-      <div className="mt-8">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{
+          duration: 0.4,
+          ease: "easeInOut",
+        }}
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: 10 },
+        }}
+        className="mt-8"
+      >
         <ul>
           {contacts.map((contact, index) => (
-            <motion.li
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.2,
-                ease: "easeInOut",
-                delay: index / 10,
-              }}
-              variants={{
-                visible: { opacity: 1, y: 5 },
-                hidden: { opacity: 0, y: 5 },
-              }}
-              key={index}
-              className="flex flex-col mt-4"
-            >
+            <li key={index} className="flex flex-col mt-4">
               <span className="contact-title">{contact.title}</span>
               <a href={contact.link} target="_blank" className="contact-link">
                 {contact.displayText}
               </a>
-            </motion.li>
+            </li>
           ))}
         </ul>
-      </div>
+      </motion.div>
     </section>
   );
 };
