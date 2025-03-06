@@ -33,8 +33,7 @@ const Hero = ({ className }: HeroProps) => {
         />
 
         {/* INFO ABOUT ME */}
-        <div className="space-y-2 max-w-[600px] md:mx-auto lg:mx-0">
-          {/* <h1 className="md:text-center lg:text-right my-8">Aleksei Filonov</h1> */}
+        <div className="space-y-2 max-w-[600px] md:mx-auto lg:mx-0 flex flex-col justify-center mt-20 lg:mt-0">
           <TextEffect
             preset="fade-in-blur"
             speedReveal={1.1}

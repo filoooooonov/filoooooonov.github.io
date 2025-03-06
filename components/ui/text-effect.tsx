@@ -231,8 +231,8 @@ export function TextEffect({
   const baseClassName =
     as === "h1" || as === "h2" || as === "h3"
       ? {
-          h1: "!text-4xl !text-white md:!text-3xl lg:!text-5xl !font-bold",
-          h2: "!text-3xl !text-white md:!text-2xl lg:!text-4xl !font-bold",
+          h1: "!text-4xl !text-white md:!text-3xl lg:!text-5xl !font-medium",
+          h2: "!text-3xl !text-white md:!text-2xl lg:!text-4xl !font-medium",
           h3: "!text-base !text-white md:!text-lg lg:!text-lg !font-medium",
         }[as]
       : "";

@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
 import "./globals.css";
+import { GeistSans } from "geist/font/sans";
+
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { ReactLenis } from "@/components/utils/lenis";
 
 import { cn } from "@/lib/utils";
 
-// const fontSans = Inter({
+// const fontSans = Onest({
 //   subsets: ["latin"],
 //   variable: "--font-sans",
 // });
