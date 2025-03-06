@@ -17,6 +17,8 @@ export default function Home() {
   const refSkills = useRef<HTMLDivElement>(null);
   const isVisibleSkills = useIsVisible(refSkills);
 
+  const year = new Date().getFullYear();
+
   return (
     <main className="relative main overflow-hidden">
       {/* Noisy overlay */}
@@ -35,8 +37,13 @@ export default function Home() {
 
         <Hero className="relative z-10 mb-[150px]" />
         <MyProjects className="relative z-10 mb-40" />
-        <Skills className="relative z-10" />
+        {/* <Skills className="relative z-10" /> */}
         <GetInTouch className="relative z-10" />
+      </div>
+      <div className="w-full flex justify-center pb-10 pt-20">
+        <span className="text-neutral-400 text-sm mx-auto">
+          © {year} Aleksei Filonov. All rights reserved.
+        </span>
       </div>
     </main>
   );

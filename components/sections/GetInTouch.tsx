@@ -46,11 +46,12 @@ const GetInTouch = ({ className }: GetInTouchProps) => {
         speedReveal={1.3}
         speedSegment={0.3}
         as="h2"
-        className="mb-16"
+        className="mt-4 mb-16"
         trigger={trigger}
       >
-        Let&lsquo;s work together 🤝
+        Need a professional website? 🤝
       </TextEffect>
+
       <motion.div
         initial="hidden"
         whileInView="visible"
