@@ -11,6 +11,7 @@ interface MyProjectProps {
 const MyProjects = ({ className }: MyProjectProps) => {
   return (
     <motion.section
+      id="projects"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -26,6 +27,7 @@ const MyProjects = ({ className }: MyProjectProps) => {
         speedReveal={1.1}
         speedSegment={0.3}
         as="h2"
+        per="word"
         className="mb-16 sm:mb-32"
       >
         Recent projects ✨

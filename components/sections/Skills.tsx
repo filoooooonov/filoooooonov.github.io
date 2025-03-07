@@ -33,6 +33,7 @@ const Skills = ({ className }: SkillsProps) => {
         speedReveal={1.1}
         speedSegment={0.3}
         as="h2"
+        per="word"
         className="mb-16"
         trigger={trigger}
       >

@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 @layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+@layer utilities {
   .animation-delay-2000 {
     animation-delay: 2s;
   }
@@ -233,4 +244,40 @@ span {
 
 .heading-3 {
   @apply text-2xl font-medium mb-2;
+}
+
+.bento-card {
+  @apply relative rounded-[30px] bg-[#1b1814] shadow-lg border-4 border-[#221e1a];
+}
+
+.bento-card::after {
+  content: "";
+  background-image: url("/noise2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.02;
+  pointer-events: none;
+}
+
+.bento-card::before {
+  content: "";
+  background: linear-gradient(to top, #161411, transparent, #161411);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bento-card-content {
+  position: relative;
+  z-index: 2;
 }

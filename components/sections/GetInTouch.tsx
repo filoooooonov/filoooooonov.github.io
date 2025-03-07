@@ -46,6 +46,7 @@ const GetInTouch = ({ className }: GetInTouchProps) => {
         speedReveal={1.3}
         speedSegment={0.3}
         as="h2"
+        per="word"
         className="mt-4 mb-16"
         trigger={trigger}
       >
