@@ -227,7 +227,7 @@ span {
 }
 
 .button-secondary {
-  @apply bg-stone-800/20 border-2 border-stone-700 text-stone-300 hover:border-primary hover:text-primary rounded-md px-6 py-3 text-sm font-semibold duration-300;
+  @apply bg-stone-800/20 border-2 border-stone-800 text-stone-300 hover:bg-stone-800 rounded-md px-6 py-3 text-sm font-semibold duration-300;
 }
 
 .button-secondary-disabled {

@@ -7,6 +7,7 @@ import ContactPopup from "../ui/contact-popup";
 import { motion } from "motion/react";
 import { Tilt } from "../ui/tilt";
 import { TextEffect } from "../ui/text-effect";
+import Link from "next/link";
 
 interface HeroProps {
   className?: string;
@@ -80,7 +81,7 @@ const Hero = ({ className }: HeroProps) => {
         }}
       >
         <Tilt rotationFactor={6}>
-          <p className="group sm:bg-stone-800/30 sm:p-8 rounded-xl border-stone-800/60 border-2  border-dashed duration-300 hover:border-[#ffb40421] text-gray-200 p-4 w-[90%] sm:w-[60%]  mx-auto">
+          <p className="group sm:bg-[#221e1a]/30 sm:p-8 rounded-xl border-stone-800/60 border-2  border-dashed duration-300 hover:border-[#ffb40421] text-gray-200 p-4 w-[90%] sm:w-[60%]  mx-auto">
             Hey! I&apos;m a{" "}
             <span className="group-hover:text-primary group-hover:font-medium duration-300">
               Data Science
@@ -101,9 +102,9 @@ const Hero = ({ className }: HeroProps) => {
             className="button-primary select-none w-max"
           />
 
-          {/* <Link href="/" className="button-secondary-disabled">
-          Website pricing (soon)
-        </Link> */}
+          <Link href="/#contacts" className="button-secondary">
+            Need a website?
+          </Link>
         </div>
       </motion.div>
     </section>
