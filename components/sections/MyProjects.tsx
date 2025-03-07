@@ -42,7 +42,7 @@ const MyProjects = ({ className }: MyProjectProps) => {
       </TextEffect>
 
       {/* Always show the first 4 projects */}
-      <motion.div layout className="grid grid-cols-2 gap-12">
+      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {firstProjects.map((project, index) => (
           <React.Fragment key={index}>
             <ProjectDemoHorizontal project={project} />

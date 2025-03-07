@@ -24,7 +24,7 @@ export function BentoGrid() {
       </div>
 
       {/* Tailored Design Block */}
-      <div className="col-span-1 md:col-span-2 row-span-1 lg:h-[350px]">
+      <div className="hidden lg:block col-span-1 md:col-span-2 row-span-1 lg:h-[350px]">
         <ProcessSteps />
       </div>
     </div>
