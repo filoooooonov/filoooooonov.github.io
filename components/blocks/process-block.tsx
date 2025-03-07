@@ -61,7 +61,7 @@ export function ProcessSteps() {
           <h3 className="text-xl font-semibold text-white">
             Development Process
           </h3>
-          <p className="text-[#a99b8c] text-sm">How it's done</p>
+          <p className="text-[#a99b8c] text-sm">How it&apos;s done</p>
         </div>
 
         <motion.div

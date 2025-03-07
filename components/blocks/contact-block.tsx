@@ -30,7 +30,7 @@ export function ContactBlock() {
         <div className="mb-4">
           <h3 className="text-xl font-semibold text-white">Get in Touch</h3>
           <p className="text-[#a99b8c] text-sm">
-            Have a project in mind? Let's make it happen!
+            Have a project in mind? Let&apos;s make it happen!
           </p>
         </div>
 
