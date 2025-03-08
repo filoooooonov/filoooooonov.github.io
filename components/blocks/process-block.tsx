@@ -25,7 +25,7 @@ const steps = [
     title: "Design",
     icon: <PenToolIcon className="h-5 w-5" />,
     description:
-      "We create a vision board and wireframes follow your brand identity. We focus on user experience, intuitive navigation and ease-of-use, as well as a professional look.",
+      "We create a vision board and wireframes that follow your brand identity. We focus on user experience, intuitive navigation and ease-of-use, as well as a professional look.",
   },
   {
     id: "03",
@@ -95,7 +95,7 @@ export function ProcessSteps() {
               className={cn(
                 "relative z-50 px-3 py-2 rounded-full text-xs flex items-center gap-2 transition-all duration-200 whitespace-nowrap",
                 activeStep === step.id
-                  ? " text-black"
+                  ? " text-[#2a2520]"
                   : " text-[#a99b8c] hover:bg-[#352f29]"
               )}
             >

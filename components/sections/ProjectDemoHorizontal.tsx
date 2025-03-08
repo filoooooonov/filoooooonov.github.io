@@ -29,7 +29,7 @@ const ProjectDemoVertical = ({ project }: ProjectDemoVerticalProps) => {
           <Image
             src={project.image}
             alt={`${project.title} image`}
-            className="w-full rounded-xl"
+            className="w-full rounded-xl group-hover:scale-[0.99] duration-300"
           />
         </a>
       </div>
@@ -40,7 +40,7 @@ const ProjectDemoVertical = ({ project }: ProjectDemoVerticalProps) => {
           <a
             href={project.link}
             target="_blank"
-            className="flex items-center gap-2"
+            className="flex font-medium items-center gap-2"
           >
             {project.title}
             {project.link && <RxOpenInNewWindow />}
