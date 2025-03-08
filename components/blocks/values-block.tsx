@@ -20,7 +20,7 @@ export function Values() {
     {
       title: "Performance",
       icon: BsFillLightningFill,
-      description: "Lightning-fast websites optimized for conversion and SEO",
+      description: "Lightning-fast website optimized for conversion and SEO",
     },
   ];
 
