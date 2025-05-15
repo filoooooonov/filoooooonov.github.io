@@ -30,7 +30,7 @@ const Hero = ({ className }: HeroProps) => {
         <Image
           src={me}
           alt="Profile photo"
-          className="rounded-full aspect-square object-cover max-w-[150px] sm:max-w-[200px] mx-auto lg:mx-0"
+          className="rounded-full aspect-square object-cover max-w-[150px] sm:max-w-[150px] mx-auto lg:mx-0"
         />
 
         {/* INFO ABOUT ME */}
@@ -39,23 +39,23 @@ const Hero = ({ className }: HeroProps) => {
             preset="fade-in-blur"
             speedReveal={1.1}
             speedSegment={0.3}
-            as="h1"
-            className="md:text-center lg:text-right"
+            as="h2"
+            className="md:text-center lg:text-right mb-4"
           >
             Aleksei Filonov
           </TextEffect>
 
           {/* LOCATION */}
           <div className="flex lg:justify-end">
-            <p className="text-lg flex items-center gap-2">
+            <p className="flex items-center gap-2">
               <IoLocationSharp /> Helsinki, Finland
             </p>
           </div>
           {/* UNIVERSITY */}
-          <div className="flex md:mx-auto lg:justify-end">
+          <div className="flex lg:justify-end">
             <p className="flex items-center gap-2">
               <HiAcademicCap />
-              <span className="text-lg">
+              <span>
                 Studying Data Science at{" "}
                 <a
                   target="_blank"
@@ -81,17 +81,18 @@ const Hero = ({ className }: HeroProps) => {
         }}
       >
         <Tilt rotationFactor={6}>
-          <p className="group sm:bg-[#221e1a]/30 sm:p-8 rounded-xl border-stone-800/60 border-2  border-dashed duration-300 hover:border-[#ffb40421] text-gray-200 p-4 w-[90%] sm:w-[60%]  mx-auto">
+          <p className="group sm:bg-[#221e1a]/30 sm:p-8 rounded-xl border-stone-800/60 border-2  border-dashed duration-300 hover:border-[#ffb40421] text-neutral-200 p-4 w-[90%] sm:w-[60%]  mx-auto">
             Hey! I&apos;m a{" "}
-            <span className="group-hover:text-primary group-hover:font-medium duration-300">
-              Data Science
+            <span className="group-hover:text-primary text-neutral-200 group-hover:font-medium duration-300">
+              website developer and a Data Science
             </span>{" "}
-            student at Aalto University. Alongside my studies, I{" "}
+            student at Aalto University. I{" "}
             <span className="group-hover:text-primary group-hover:font-medium duration-300">
-              create and upgrade websites
+              build professional websites
             </span>{" "}
-            for businesses to help them acquire more clients and{" "}
+            for businesses to make them stand out and
             <span className="group-hover:text-primary group-hover:font-medium duration-300">
+              {" "}
               boost their online presence.
             </span>
           </p>
@@ -102,9 +103,14 @@ const Hero = ({ className }: HeroProps) => {
             className="button-primary select-none w-max"
           />
 
-          <Link href="/#contacts" className="button-secondary">
+          <a
+            href="https://web.alekseifilonov.com"
+            target="_blank"
+            x
+            className="button-secondary"
+          >
             Need a website?
-          </Link>
+          </a>
         </div>
       </motion.div>
     </section>
