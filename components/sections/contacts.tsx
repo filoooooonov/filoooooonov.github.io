@@ -46,7 +46,7 @@ const Contacts = ({ className }: ContactsProps) => {
 
   return (
     <section id="contacts" className={className}>
-      <div className="flex justify-between mt-4 mb-16">
+      <div className="flex flex-col md:flex-row justify-between mt-4 mb-16">
         <TextEffect
           preset="fade-in-blur"
           speedReveal={1.3}
@@ -60,7 +60,7 @@ const Contacts = ({ className }: ContactsProps) => {
         <a
           href="https://web.alekseifilonov.com"
           target="_blank"
-          className="button-secondary h-max flex items-center gap-2"
+          className="button-secondary h-max flex items-center gap-2 mt-8 md:mt-0"
         >
           More about websites <RxOpenInNewWindow />
         </a>
