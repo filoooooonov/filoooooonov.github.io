@@ -28,21 +28,21 @@ export function TestimonialBlock() {
           <Image
             src={image1}
             alt="Decorative Image 1"
-            className="border-2 border-stone-400/10 absolute -bottom-16 group-hover:-bottom-8 -right-12 w-60 group-hover:w-64 rounded-xl duration-300"
+            className="border-2 border-stone-400/10 absolute -bottom-16 group-hover:-bottom-8 group-hover:rotate-3 -right-12 w-60 group-hover:w-64 rounded-xl duration-300"
           />
 
           {/* Second Image: Smaller and shifted to the left, behind first */}
           <Image
             src={image2}
             alt="Decorative Image 2"
-            className="absolute border-stone-400/10 -bottom-8 group-hover:bottom-10 -left-20 w-52 z-[-1] rounded-xl duration-300"
+            className="absolute border-stone-400/10 -bottom-8 group-hover:bottom-10 group-hover:-rotate-3 -left-20 w-52 z-[-1] rounded-xl duration-300"
           />
 
           {/* Third Image: Even smaller, shifted higher and behind first two */}
           <Image
             src={image3}
             alt="Decorative Image 3"
-            className="absolute border-stone-400/10  bottom-4 group-hover:bottom-32 right-20 w-40 group-hover:w-36 z-[-2] rounded-xl duration-300"
+            className="absolute border-stone-400/10  bottom-4 group-hover:bottom-32  group-hover:rotate-3 right-20 w-40 group-hover:w-36 z-[-2] rounded-xl duration-300"
           />
         </div>
 

@@ -4,6 +4,7 @@ import { InboxIcon as EnvelopeIcon } from "lucide-react";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import { Button } from "@/components/ui/button";
 import { BiLogoTelegram, BiLogoLinkedin } from "react-icons/bi";
+import { MdVideoCall } from "react-icons/md";
 
 const contacts = [
   {
@@ -12,9 +13,9 @@ const contacts = [
     icon: EnvelopeIcon,
   },
   {
-    name: "Telegram",
-    link: "https://t.me/wheelsofsteel",
-    icon: BiLogoTelegram,
+    name: "Book a call",
+    link: "https://cal.com/aleksei-filonov/intro",
+    icon: MdVideoCall,
   },
   {
     name: "LinkedIn",

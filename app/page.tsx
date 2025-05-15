@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from "react";
 import { useIsVisible } from "@/components/utils/useIsVisible";
 import Contacts from "@/components/sections/contacts";
 import { motion } from "motion/react";
+import Footer from "@/components/sections/Footer";
 
 export default function Home() {
   const refHero = useRef<HTMLDivElement>(null);
@@ -18,8 +19,6 @@ export default function Home() {
 
   const refSkills = useRef<HTMLDivElement>(null);
   const isVisibleSkills = useIsVisible(refSkills);
-
-  const year = new Date().getFullYear();
 
   return (
     <motion.main
@@ -50,12 +49,7 @@ export default function Home() {
 
           <Contacts className="relative z-10" />
         </div>
-        <div className="w-full flex flex-col justify-center items-center pb-10 pt-20 relative">
-          <span className="text-[#4d4038] text-sm mx-auto z-10">
-            © {year} Aleksei Filonov. All rights reserved.
-          </span>
-          <div className="w-full bg-gradient-to-t from-[#1f1913] to-transparent h-[500px] absolute bottom-0"></div>
-        </div>
+        <Footer />
       </motion.div>
     </motion.main>
   );

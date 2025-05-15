@@ -7,6 +7,7 @@ import { AdminPanelBlock } from "../blocks/admin-block";
 import { ContactBlock } from "../blocks/contact-block";
 import { ProcessSteps } from "../blocks/process-block";
 import { BentoGrid } from "../ui/bento-grid";
+import { RxOpenInNewWindow } from "react-icons/rx";
 
 interface ContactsProps {
   className?: string;
@@ -45,18 +46,24 @@ const Contacts = ({ className }: ContactsProps) => {
 
   return (
     <section id="contacts" className={className}>
-      <div>
+      <div className="flex justify-between mt-4 mb-16">
         <TextEffect
           preset="fade-in-blur"
           speedReveal={1.3}
           speedSegment={0.3}
           as="h2"
           per="word"
-          className="mt-4 mb-16"
           trigger={trigger}
         >
           Need a professional website? 🤝
         </TextEffect>
+        <a
+          href="https://web.alekseifilonov.com"
+          target="_blank"
+          className="button-secondary h-max flex items-center gap-2"
+        >
+          More about websites <RxOpenInNewWindow />
+        </a>
       </div>
       <motion.div
         initial="hidden"
