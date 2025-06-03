@@ -2,7 +2,7 @@ import kukibitImg from "@/public/kukibit_mockup.webp";
 import ruokascraperImg from "@/public/ruokascraper_mockup.webp";
 import ikigaiaImg from "@/public/ikigaia_mockup.webp";
 import timelinerImg from "@/public/timeliner_mockup.webp";
-import checkmapImg from "@/public/checkmap.png";
+import vitalSignsImg from "@/public/vitalsigns_mockup.svg";
 import HCSImg from "@/public/HCS.png";
 import { StaticImageData } from "next/image";
 
@@ -18,19 +18,20 @@ export interface Project {
 
 export const projects = [
   {
+    title: "VitalSigns",
+    image: vitalSignsImg,
+    link: "https://vitalsigns.fi",
+    tags: [],
+    descriptionShort:
+      "Website for a medical device startup that develops a smart modern stethoscope. ",
+  },
+  {
     title: "Heavy Cleaning Services",
     link: "https://heavycleaning.fi",
     image: HCSImg,
     tags: ["NEXT.JS", "REACT", "TAILWIND", "FIREBASE"],
     descriptionShort:
-      "A website for a truck-washing company based in Helsinki, Finland. In development.",
-  },
-  {
-    title: "Checkmap",
-    image: checkmapImg,
-    tags: ["NEXT.JS", "REACT", "TAILWIND", "VERCEL", "MONGODB"],
-    descriptionShort:
-      "A tool for creating maps with custom markers and sharing them with others. Meant for anyone, be it for personal use, tourism or student associations. In active development.",
+      "Website for a truck-washing company based in Helsinki, Finland.",
   },
 
   {
@@ -38,7 +39,7 @@ export const projects = [
     image: timelinerImg,
     tags: ["NEXT.JS", "REACT", "TAILWIND", "VERCEL", "MONGODB"],
     descriptionShort:
-      "A place for startups and companies to share their stories from day one. In development.",
+      "A place for startups and companies to share their stories from day one. Paused.",
   },
   // {
   //   title: "Website for IKIGAIA",
@@ -55,7 +56,7 @@ export const projects = [
     category: "webdev",
     tags: ["NEXT.JS", "REACT", "TAILWIND", "FIREBASE"],
     descriptionShort:
-      "A custom built business portfolio website for Kukibit, an IT services company based in Lappeenranta, Finland. ",
+      "Business portfolio website for Kukibit, an IT services company based in Lappeenranta, Finland. ",
   },
   {
     title: "Ruokascraper",

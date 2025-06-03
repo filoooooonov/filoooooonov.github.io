@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { Project } from "@/components/sections/ProjectList";
-import { RxOpenInNewWindow } from "react-icons/rx";
+import { MdArrowOutward } from "react-icons/md";
 import { motion } from "framer-motion";
 
 interface ProjectDemoVerticalProps {
@@ -43,7 +43,9 @@ const ProjectDemoVertical = ({ project }: ProjectDemoVerticalProps) => {
             className="flex font-medium items-center gap-2"
           >
             {project.title}
-            {project.link && <RxOpenInNewWindow />}
+            {project.link && (
+              <MdArrowOutward className="text-primary transform translate-x-[-4px] opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-200" />
+            )}
           </a>
         </h3>
         <p className="text-[#a99b8c] mb-4">{project.descriptionShort}</p>

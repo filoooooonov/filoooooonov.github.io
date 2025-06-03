@@ -32,7 +32,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
-        <div className="max-w-[1024px] mx-auto px-6 md:px-4 lg:px-0 pb-20">
+        <div className="max-w-4xl mx-auto px-6 md:px-4 lg:px-0 pb-20">
           {/* Blury background */}
           <div className="relative z-0">
             <div className="absolute top-12 -left-24 w-[300px] h-[300px] bg-[#ffbd22e3] rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
