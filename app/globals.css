@@ -24,7 +24,6 @@
 
 ::selection {
   background-color: #ecc72231;
-  color: #ecc722;
 }
 
 ::-webkit-scrollbar {
@@ -122,62 +121,26 @@
   }
 }
 
-body {
-  background-color: #141615;
-  /* background-image: radial-gradient(at 23% 83%, #1a1d1c 0px, transparent 50%),
-    radial-gradient(at 35% -80%, #fc3789 0px, transparent 40%),
-    radial-gradient(at 89% 95%, #1a1d1c 0px, transparent 50%),
-    radial-gradient(at 75% -80%, #ff9b06 0px, transparent 40%); */
-}
-
 h1 {
-  @apply text-4xl text-white md:text-3xl lg:text-5xl font-bold;
+  @apply text-3xl text-neutral-900 md:text-2xl lg:text-3xl font-medium;
 }
 h2 {
-  @apply text-3xl text-white md:text-2xl lg:text-4xl font-bold;
+  @apply text-3xl text-neutral-600 md:text-2xl lg:text-xl font-medium;
 }
 h3 {
-  @apply text-base text-white md:text-lg lg:text-lg font-medium;
+  @apply text-base text-neutral-900 md:text-lg lg:text-lg font-medium;
+}
+
+p {
+  @apply text-stone-700;
+}
+
+a {
+  @apply cursor-pointer;
 }
 
 hr {
   @apply border-stone-800 my-4;
-}
-
-p,
-span {
-  @apply text-gray-400 text-base font-light;
-}
-
-.button {
-  @apply text-white justify-center text-center w-max h-max mx-auto bg-[#7798bd2a] py-2 px-6 rounded-full border-t border-[#616a9136] cursor-pointer transition duration-200;
-  @apply hover:bg-primary_dark hover:-translate-y-0.5;
-}
-
-.tag {
-  @apply bg-stone-800/40 rounded-full text-center text-xs px-3 py-1 text-stone-500;
-}
-
-.project-link {
-  @apply text-primary font-semibold;
-  @apply hover:underline hover:underline-offset-8;
-}
-
-.skill-box {
-  @apply bg-stone-800/40 text-stone-400 transition duration-200 rounded-xl p-4 flex items-center gap-4 select-none;
-}
-
-.contact-title {
-  @apply text-stone-500 text-base font-light;
-}
-
-.contact-link {
-  @apply hover:text-primary transition duration-200 cursor-pointer text-white text-2xl;
-}
-
-.nav-link {
-  @apply text-stone-400 cursor-pointer py-3 px-6 rounded-lg;
-  @apply hover:text-stone-100 hover:bg-box;
 }
 
 .nav-dropdown {
@@ -202,48 +165,11 @@ span {
   position: fixed;
   opacity: 0.02;
   z-index: 10;
-}
-
-p,
-li,
-span {
-  @apply text-neutral-300;
+  pointer-events: none;
 }
 
 .text-link {
   @apply text-primary cursor-pointer hover:text-primary/90 duration-300;
-}
-
-.example-link {
-  @apply absolute bottom-6 left-6 text-link bg-amber-800/10 hover:bg-amber-700/20 py-2 px-4 text-sm rounded-md;
-}
-
-.example-link-disabled {
-  @apply absolute bottom-6 left-6 text-link bg-amber-800/10  py-2 px-6 text-sm rounded-md;
-}
-
-.button-primary {
-  @apply bg-primary text-black rounded-md px-6 py-3 text-sm font-semibold hover:bg-white duration-300;
-}
-
-.button-secondary {
-  @apply bg-stone-800/20 border-2 border-stone-800 text-stone-300 hover:bg-stone-800 rounded-md px-6 py-3 text-sm font-semibold duration-300;
-}
-
-.button-secondary-disabled {
-  @apply cursor-not-allowed border-2 border-stone-800 text-stone-600 rounded-md px-6 py-3 text-sm font-semibold;
-}
-
-.heading-1 {
-  @apply text-4xl font-bold mb-4;
-}
-
-.heading-2 {
-  @apply text-3xl font-semibold mb-3;
-}
-
-.heading-3 {
-  @apply text-2xl font-medium mb-2;
 }
 
 .bento-card {

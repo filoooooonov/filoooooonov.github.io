@@ -8,6 +8,9 @@ import { motion } from "motion/react";
 import { Tilt } from "../ui/tilt";
 import { TextEffect } from "../ui/text-effect";
 import Link from "next/link";
+import { Button } from "../ui/button";
+import ProjectCards from "./ProjectCards";
+import TimeInHelsinki from "../ui/TimeInHelsinki";
 
 interface HeroProps {
   className?: string;
@@ -15,7 +18,7 @@ interface HeroProps {
 
 const Hero = ({ className }: HeroProps) => {
   return (
-    <section className={className}>
+    <section className="relative z-10 mb-[150px]">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -25,51 +28,17 @@ const Hero = ({ className }: HeroProps) => {
           visible: { opacity: 1, y: 0 },
           hidden: { opacity: 0, y: 20 },
         }}
-        className="flex flex-col lg:flex-row justify-between pt-[5vh] sm:pt-[12vh] pb-20 w-auto"
+        className="mb-20 mt-10"
       >
         <Image
           src={me}
           alt="Profile photo"
-          className="rounded-full aspect-square object-cover max-w-[150px] sm:max-w-[150px] mx-auto lg:mx-0"
+          className="rounded-full aspect-square object-cover size-12"
         />
 
-        {/* INFO ABOUT ME */}
-        <div className="space-y-2 max-w-[600px] md:mx-auto lg:mx-0 flex flex-col justify-center mt-20 lg:mt-0">
-          <TextEffect
-            preset="fade-in-blur"
-            speedReveal={1.1}
-            speedSegment={0.3}
-            as="h2"
-            className="md:text-center lg:text-right mb-4"
-          >
-            Aleksei Filonov
-          </TextEffect>
-
-          {/* LOCATION */}
-          <div className="flex lg:justify-end">
-            <p className="flex items-center gap-2">
-              <IoLocationSharp /> Helsinki, Finland
-            </p>
-          </div>
-          {/* UNIVERSITY */}
-          <div className="flex md:mx-auto lg:justify-end">
-            <p className="flex items-center gap-2">
-              <HiAcademicCap />
-              <span>
-                Studying Data Science at{" "}
-                <a
-                  target="_blank"
-                  href="https://www.aalto.fi/en/study-options/data-science-bachelor-of-science-technology-master-of-science-technology"
-                  className="block sm:inline text-primary hover:text-primary/80 duration-200 cursor-pointer"
-                >
-                  Aalto University
-                </a>
-              </span>
-            </p>
-          </div>
-        </div>
+        <h3 className="text-neutral-800 text-base mt-2">Aleksei Filonov</h3>
+        <p className="text-neutral-600 text-sm">Website Developer</p>
       </motion.div>
-
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -79,35 +48,38 @@ const Hero = ({ className }: HeroProps) => {
           visible: { opacity: 1, y: 0 },
           hidden: { opacity: 0, y: 20 },
         }}
+        className="space-y-6"
       >
-        <Tilt rotationFactor={6}>
-          <p className="group sm:bg-[#221e1a]/30 sm:p-8 rounded-xl border-stone-800/60 border-2  border-dashed duration-300 hover:border-[#ffb40421] text-neutral-200 p-4 w-[90%] sm:w-[60%]  mx-auto">
-            Hey! I&apos;m a{" "}
-            <span className="group-hover:text-primary group-hover:font-medium duration-300">
-              Data Science
-            </span>{" "}
-            student at Aalto University. Alongside my studies, I{" "}
-            <span className="group-hover:text-primary group-hover:font-medium duration-300">
-              create and upgrade websites
-            </span>{" "}
-            for businesses to help them acquire more clients and{" "}
-            <span className="group-hover:text-primary group-hover:font-medium duration-300">
-              boost their online presence.
-            </span>
-          </p>
-        </Tilt>
-        <div className="flex flex-row gap-4 justify-center mt-12">
-          <ContactPopup
-            text="Get in touch"
-            className="button-primary select-none w-max"
-          />
+        <h1>Your business deserves a proper website.</h1>
+        <p className="text-sm max-w-md">
+          You have 10 seconds to impress your website's visitor. And a WordPress
+          template won't do it. A professional business requires a professional
+          website - and I know exactly how to make you stand out.
+        </p>
+        <ProjectCards />
+      </motion.div>
 
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeInOut", delay: 0.6 }}
+        variants={{
+          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0, y: 20 },
+        }}
+      >
+        <div className="flex flex-row gap-4 mt-12">
           <a
-            href="https://web.alekseifilonov.com"
+            href="https://cal.com/aleksei-filonov/intro"
             target="_blank"
-            className="button-secondary"
+            rel="noopener noreferrer"
           >
-            Need a website?
+            <Button variant="default">Get Started</Button>
+          </a>
+
+          <a href="mailto:alexfiloonov@gmail.com">
+            <Button variant="secondary">I don't like calls</Button>
           </a>
         </div>
       </motion.div>

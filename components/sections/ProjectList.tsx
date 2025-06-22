@@ -18,6 +18,12 @@ export interface Project {
 
 export const projects = [
   {
+    title: "Automata",
+    image: vitalSignsImg,
+    tags: [],
+    descriptionShort: "Automata",
+  },
+  {
     title: "VitalSigns",
     image: vitalSignsImg,
     link: "https://vitalsigns.fi",
@@ -58,14 +64,14 @@ export const projects = [
     descriptionShort:
       "Business portfolio website for Kukibit, an IT services company based in Lappeenranta, Finland. ",
   },
-  {
-    title: "Ruokascraper",
-    image: ruokascraperImg,
-    category: "webdev",
-    tags: ["NEXT.JS", "REACT", "TAILWIND", "WEB SCRAPING", "FIREBASE"],
-    descriptionShort:
-      "Ruokascraper is a price aggregator that helps you save money on groceries in Finnish S- and K-group stores. Paused.",
-    descriptionLong:
-      "Ruokascraper is a service that helps you save money and time on your groceries. You can input your grocery list and Ruokascraper will find the cheapest deals from K-Group and S-Group stores and sort them into two grocery lists, each for a separate store chain. Currently in development.",
-  },
+  // {
+  //   title: "Ruokascraper",
+  //   image: ruokascraperImg,
+  //   category: "webdev",
+  //   tags: ["NEXT.JS", "REACT", "TAILWIND", "WEB SCRAPING", "FIREBASE"],
+  //   descriptionShort:
+  //     "Ruokascraper is a price aggregator that helps you save money on groceries in Finnish S- and K-group stores. Paused.",
+  //   descriptionLong:
+  //     "Ruokascraper is a service that helps you save money and time on your groceries. You can input your grocery list and Ruokascraper will find the cheapest deals from K-Group and S-Group stores and sort them into two grocery lists, each for a separate store chain. Currently in development.",
+  // },
 ];

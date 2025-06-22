@@ -22,7 +22,7 @@ const config = {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       colors: {
-        background: "#15120f",
+        background: "#f6f5f1",
         primary: "#ecc722",
         primary_dark: "#4d4038",
         secondary: "#d4dae9",
