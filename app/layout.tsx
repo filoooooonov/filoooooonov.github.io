@@ -7,6 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { ReactLenis } from "@/components/utils/lenis";
 
 import { cn } from "@/lib/utils";
+import Header from "@/components/sections/Header";
 
 // const fontSans = Onest({
 //   subsets: ["latin"],
@@ -61,11 +62,14 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-background font-sans antialiased max-w-3xl mx-auto border-x border-stone-200",
           GeistSans.className
         )}
       >
-        <ReactLenis root>{children}</ReactLenis>
+        <ReactLenis root>
+          <Header />
+          {children}
+        </ReactLenis>
         <Analytics />
       </body>
     </html>

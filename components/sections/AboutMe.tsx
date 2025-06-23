@@ -23,29 +23,29 @@ const contactLinks = [
 
 export default function AboutMe() {
   return (
-    <section className="mt-40">
+    <section className="mt-40 px-6 border-t border-stone-200 py-6">
       <h2>Behind the curtains</h2>
 
-      <div className="w-full relative h-80 my-12">
+      <div className="w-full relative h-60 md:h-80 my-12">
         <Image
           src={rope}
           alt="rope"
-          className="absolute -top-8 left-0 w-full"
+          className="absolute -top-8 left-0 w-full hidden lg:block"
         />
-        <div className="absolute top-[4.5rem] left-16 w-40 bg-white/80 rounded-xl p-1 shadow-xl rotate-[10deg]">
+        <div className="absolute top-[8%] xs:top-[12%] sm:top-[18%] md:top-[20%] lg:top-[22%] left-8 lg:left-16 w-32 sm:w-40 bg-white/80 rounded-xl p-1 shadow-xl rotate-[10deg]">
           <Image src={aboutMe1} alt="about me" className="rounded-lg" />
+          <div className="hidden lg:block bg-[#7e5b3e] rounded-sm w-1.5 h-8 absolute -top-4 left-1/2 -translate-x-1/2 rotate-[10deg]"></div>
         </div>
-        <div className="bg-[#7e5b3e] rounded-sm w-1.5 h-8 absolute top-14 left-40 rotate-[10deg]"></div>
 
-        <div className="absolute top-[5.5rem] left-72 w-40 bg-white/80 rounded-xl p-1 shadow-xl rotate-2">
+        <div className="absolute top-[10%] xs:top-[16%] sm:top-[25%] lg:top-[27%] left-1/2 -translate-x-1/2 w-32 sm:w-40 bg-white/80 rounded-xl p-1 shadow-xl rotate-2">
           <Image src={aboutMe2} alt="about me" className="rounded-lg" />
+          <div className="hidden lg:block bg-[#7e5b3e] rounded-sm w-1.5 h-8 absolute -top-4 left-1/2 -translate-x-1/2 -rotate-[2deg]"></div>
         </div>
-        <div className="bg-[#7e5b3e] rounded-sm w-1.5 h-8 absolute top-[4.3rem] left-[22.5rem] -rotate-[2deg]"></div>
 
-        <div className="absolute top-16 right-10 w-40 bg-white/80 rounded-xl p-1 shadow-xl -rotate-12">
+        <div className="absolute top-[8%] xs:top-[11%] sm:top-[14%] md:top-[16%] lg:top-[18%] right-4 lg:right-10 w-32 sm:w-40 bg-white/80 rounded-xl p-1 shadow-xl -rotate-12">
           <Image src={aboutMe3} alt="about me" className="rounded-lg" />
+          <div className="hidden lg:block bg-[#7e5b3e] rounded-sm w-1.5 h-8 absolute -top-4 right-1/2 -translate-x-1/2 -rotate-12"></div>
         </div>
-        <div className="bg-[#7e5b3e] rounded-sm w-1.5 h-8 absolute top-12 right-36 -rotate-12"></div>
       </div>
       <div className="space-y-4 text-sm max-w-xl">
         <p>
@@ -63,7 +63,7 @@ export default function AboutMe() {
           my goals, and not forgetting to enjoy life in the meantime.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-16 text-base mt-12">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 text-base mt-12">
         {contactLinks.map((link) => (
           <a
             href={link.href}

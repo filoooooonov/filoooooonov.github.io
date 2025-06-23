@@ -9,23 +9,24 @@ import feature5 from "@/public/feature5.svg";
 import feature6 from "@/public/feature6.svg";
 import feature7 from "@/public/feature7.svg";
 import feature8 from "@/public/feature8.svg";
+import Link from "next/link";
 
 const features = [
   { name: "Fast", icon: feature1 },
-  { name: "Responsive", icon: feature2 },
-  { name: "Modern", icon: feature3 },
+  { name: "Reliable", icon: feature2 },
+  { name: "Easy to use", icon: feature3 },
   { name: "SEO-friendly", icon: feature4 },
-  { name: "Scalable", icon: feature5 },
+  { name: "Brand-aligned", icon: feature5 },
   { name: "Secure", icon: feature6 },
   { name: "Customizable", icon: feature7 },
-  { name: "Easy to use", icon: feature8 },
+  { name: "Responsive", icon: feature8 },
 ];
 
 export default function Features() {
   return (
-    <section className="my-20">
+    <section className="px-6 my-20">
       <h2>Your website should be ...</h2>
-      <div className="grid grid-cols-4 gap-8 my-12">
+      <div className="grid grid-cols-2 lg:grid-cols-4  gap-8 my-12">
         {features.map((feature) => (
           <div
             key={feature.name}
@@ -41,6 +42,33 @@ export default function Features() {
         ))}
       </div>
       <h2>and I take care of that.</h2>
+
+      <div className="mt-32 space-y-2">
+        <h2>
+          Have a project in mind?{" "}
+          <span className="text-stone-600">
+            Shoot me an{" "}
+            <a target="_blank" href="mailto:alexfiloonov@gmail.com">
+              email
+            </a>{" "}
+            or{" "}
+            <a target="_blank" href="https://cal.com/aleksei-filonov/intro">
+              book a call
+            </a>
+            .
+          </span>
+        </h2>
+        <h2>
+          Have questions?{" "}
+          <span className="text-stone-600">
+            Check out the <Link href="/faq">FAQ</Link> or send me an{" "}
+            <a target="_blank" href="mailto:alexfiloonov@gmail.com">
+              email
+            </a>
+            .
+          </span>
+        </h2>
+      </div>
     </section>
   );
 }
