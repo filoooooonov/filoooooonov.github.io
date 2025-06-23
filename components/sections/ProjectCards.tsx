@@ -13,7 +13,7 @@ export default function ProjectCards() {
 
   return (
     <div
-      className="relative flex items-center pl-40 md:pl-52 h-60 [filter:drop-shadow(0_12px_10px_rgba(168,162,158,0.4))]"
+      className="relative flex items-center pl-32 md:pl-36 h-60 [filter:drop-shadow(0_12px_10px_rgba(168,162,158,0.4))]"
       onMouseLeave={() => setHoveredIndex(null)}
     >
       {reversedProjects.map((project, index) => {

@@ -1,4 +1,4 @@
-import kukibitImg from "@/public/kukibit_mockup.webp";
+import kukibitImg from "@/public/kukibit_square.png";
 import ruokascraperImg from "@/public/ruokascraper_mockup.webp";
 import ikigaiaImg from "@/public/ikigaia_square.png";
 import timelinerImg from "@/public/timeliner_square.png";
@@ -39,12 +39,12 @@ export const projects = [
       "Website for a truck-washing company based in Helsinki, Finland.",
   },
 
-  {
-    title: "Timeliner.",
-    image: timelinerImg,
-    descriptionShort:
-      "A place for startups and companies to share their stories from day one. Paused.",
-  },
+  // {
+  //   title: "Timeliner.",
+  //   image: timelinerImg,
+  //   descriptionShort:
+  //     "A place for startups and companies to share their stories from day one. Paused.",
+  // },
   {
     title: "Website for IKIGAIA",
     image: ikigaiaImg,
