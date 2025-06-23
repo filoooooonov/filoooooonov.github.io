@@ -19,7 +19,10 @@ export default function Home() {
   const isVisibleSkills = useIsVisible(refSkills);
 
   return (
-    <motion.main animate={{ opacity: 1 }} className="relative main">
+    <motion.main
+      animate={{ opacity: 1 }}
+      className="relative main overflow-x-hidden md:overflow-visible"
+    >
       {/* Noisy overlay */}
       <div className="z-10 overlay"></div>
       <motion.div
@@ -27,12 +30,10 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
       >
-        <div className="">
-          <Hero />
-          <Features />
-          <AboutMe />
-          <Footer />
-        </div>
+        <Hero />
+        <Features />
+        <AboutMe />
+        <Footer />
       </motion.div>
     </motion.main>
   );

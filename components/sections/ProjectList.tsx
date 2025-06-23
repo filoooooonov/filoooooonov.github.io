@@ -1,9 +1,10 @@
 import kukibitImg from "@/public/kukibit_mockup.webp";
 import ruokascraperImg from "@/public/ruokascraper_mockup.webp";
-import ikigaiaImg from "@/public/ikigaia_mockup.webp";
-import timelinerImg from "@/public/timeliner_mockup.webp";
-import vitalSignsImg from "@/public/vitalsigns_mockup.svg";
-import HCSImg from "@/public/HCS.png";
+import ikigaiaImg from "@/public/ikigaia_square.png";
+import timelinerImg from "@/public/timeliner_square.png";
+import vitalSignsImg from "@/public/vitalsigns_square.png";
+import automataImg from "@/public/automata_square.png";
+import hcsImg from "@/public/hcs_square.png";
 import { StaticImageData } from "next/image";
 
 export interface Project {
@@ -11,7 +12,6 @@ export interface Project {
   image: StaticImageData;
   link?: string;
   category?: string;
-  tags: string[];
   descriptionShort: string;
   descriptionLong?: string;
 }
@@ -19,7 +19,7 @@ export interface Project {
 export const projects = [
   {
     title: "Automata",
-    image: vitalSignsImg,
+    image: automataImg,
     tags: [],
     descriptionShort: "Automata",
   },
@@ -34,8 +34,7 @@ export const projects = [
   {
     title: "Heavy Cleaning Services",
     link: "https://heavycleaning.fi",
-    image: HCSImg,
-    tags: ["NEXT.JS", "REACT", "TAILWIND", "FIREBASE"],
+    image: hcsImg,
     descriptionShort:
       "Website for a truck-washing company based in Helsinki, Finland.",
   },
@@ -43,24 +42,21 @@ export const projects = [
   {
     title: "Timeliner.",
     image: timelinerImg,
-    tags: ["NEXT.JS", "REACT", "TAILWIND", "VERCEL", "MONGODB"],
     descriptionShort:
       "A place for startups and companies to share their stories from day one. Paused.",
   },
-  // {
-  //   title: "Website for IKIGAIA",
-  //   image: ikigaiaImg,
-  //   link: "https://ikigaia.fi",
-  //   tags: ["NEXT.JS", "REACT", "TAILWIND", "FIREBASE"],
-  //   descriptionShort:
-  //     "A portfolio website for IKIGAIA with a strong focus on presentability and professionalism. In development.",
-  // },
+  {
+    title: "Website for IKIGAIA",
+    image: ikigaiaImg,
+    link: "https://ikigaia.fi",
+    descriptionShort:
+      "A portfolio website for IKIGAIA with a strong focus on presentability and professionalism. In development.",
+  },
   {
     title: "Portfolio website for Kukibit",
     image: kukibitImg,
     link: "https://kukibit.fi",
     category: "webdev",
-    tags: ["NEXT.JS", "REACT", "TAILWIND", "FIREBASE"],
     descriptionShort:
       "Business portfolio website for Kukibit, an IT services company based in Lappeenranta, Finland. ",
   },
