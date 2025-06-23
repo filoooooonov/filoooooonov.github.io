@@ -33,7 +33,6 @@ export default function Home() {
         <Hero />
         <Features />
         <AboutMe />
-        <Footer />
       </motion.div>
     </motion.main>
   );

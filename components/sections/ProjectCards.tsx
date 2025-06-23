@@ -9,13 +9,14 @@ export default function ProjectCards() {
   const middleIndex = Math.floor(projects.length / 2);
   const cardVisibleWidth = 64;
   const hoverOffset = 100;
+  const reversedProjects = projects.reverse();
 
   return (
     <div
       className="relative flex items-center pl-40 md:pl-52 h-60 [filter:drop-shadow(0_12px_10px_rgba(168,162,158,0.4))]"
       onMouseLeave={() => setHoveredIndex(null)}
     >
-      {projects.reverse().map((project, index) => {
+      {reversedProjects.map((project, index) => {
         let transform = `translateX(${
           (index - middleIndex) * cardVisibleWidth
         }px) rotate(20deg)`;

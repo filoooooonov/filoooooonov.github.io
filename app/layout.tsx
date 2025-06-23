@@ -8,6 +8,7 @@ import { ReactLenis } from "@/components/utils/lenis";
 
 import { cn } from "@/lib/utils";
 import Header from "@/components/sections/Header";
+import Footer from "@/components/sections/Footer";
 
 // const fontSans = Onest({
 //   subsets: ["latin"],
@@ -69,6 +70,7 @@ export default function RootLayout({
         <ReactLenis root>
           <Header />
           {children}
+          <Footer />
         </ReactLenis>
         <Analytics />
       </body>
