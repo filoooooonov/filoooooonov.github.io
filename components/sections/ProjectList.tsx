@@ -16,7 +16,7 @@ export interface Project {
   descriptionLong?: string;
 }
 
-export const projects = [
+const projectList = [
   {
     title: "Automata",
     image: automataImg,
@@ -71,3 +71,5 @@ export const projects = [
   //     "Ruokascraper is a service that helps you save money and time on your groceries. You can input your grocery list and Ruokascraper will find the cheapest deals from K-Group and S-Group stores and sort them into two grocery lists, each for a separate store chain. Currently in development.",
   // },
 ];
+
+export const projects = projectList.reverse();
