@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://filoooooonov.github.io
-
-# Sitemaps
-Sitemap: https://filoooooonov.github.io/sitemap.xml
