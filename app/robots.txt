@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://alekseifilonov.com
+
+# Sitemaps
+Sitemap: https://alekseifilonov.com/sitemap.xml
