@@ -1,4 +1,4 @@
-import kukibitImg from "@/public/kukibit_square.png";
+import kukibitImg from "@/public/kukibit_square_preview.png";
 import ruokascraperImg from "@/public/ruokascraper_mockup.webp";
 import ikigaiaImg from "@/public/ikigaia_square.png";
 import timelinerImg from "@/public/timeliner_square.png";
@@ -31,13 +31,13 @@ const projectList = [
     descriptionShort:
       "Website for a medical device startup that develops a smart modern stethoscope. ",
   },
-  {
-    title: "Heavy Cleaning Services",
-    link: "https://heavycleaning.fi",
-    image: hcsImg,
-    descriptionShort:
-      "Website for a truck-washing company based in Helsinki, Finland.",
-  },
+  // {
+  //   title: "Heavy Cleaning Services",
+  //   link: "https://heavycleaning.fi",
+  //   image: hcsImg,
+  //   descriptionShort:
+  //     "Website for a truck-washing company based in Helsinki, Finland.",
+  // },
 
   // {
   //   title: "Timeliner.",
