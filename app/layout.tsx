@@ -16,16 +16,17 @@ import Footer from "@/components/sections/Footer";
 // });
 
 export const metadata: Metadata = {
-  title: "Aleksei Filonov",
-  description:
-    "I focus on creating and upgrading websites for businesses to help them acquire more clients and boost their online presence.",
+  title: "Website Development · Aleksei Filonov",
+  description: "Professional website development and design in Finland.",
   keywords: [
-    "web development",
-    "client acquisition",
-    "online presence",
-    "data science",
-    "Aalto University",
-    "developer",
+    "website design agency Finland",
+    "verkkosivujen suunnittelu",
+    "verkkosivuston kehitys",
+    "hakukoneoptimointi",
+    "website design",
+    "website development",
+    "ui design Finland",
+    "web development Finland",
   ],
 };
 
