@@ -33,7 +33,7 @@ export default function Header() {
         </Link>
 
         <h3 className="text-neutral-800 text-base mt-2">Aleksei Filonov</h3>
-        <p className="text-neutral-600 text-sm">Website Developer</p>
+        <p className="text-neutral-600 text-sm">Website Developer & Designer</p>
       </motion.div>
     </header>
   );

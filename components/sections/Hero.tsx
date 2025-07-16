@@ -46,7 +46,7 @@ const Hero = ({ className }: HeroProps) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button variant="default">Get Started</Button>
+            <Button variant="default">Book a call</Button>
           </a>
 
           <a href="mailto:alexfiloonov@gmail.com">
