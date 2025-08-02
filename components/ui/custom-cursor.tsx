@@ -63,11 +63,11 @@ export default function CustomCursor({
             <div className="absolute w-full " />
             {text && (
               <div className="px-5 py-3 rounded-full flex gap-1 items-center">
-                <span className="text-neutral-400 font-normal">
+                <span className="text-neutral-400 text-xs font-normal">
                   {link ? "Visit" : "WIP"}
                 </span>
 
-                <span className="text-neutral-200 font-medium  text-base relative">
+                <span className="text-neutral-200 font-medium  text-xs relative">
                   {text}
                 </span>
                 {link && <MdOutlineArrowOutward className="text-neutral-400" />}
