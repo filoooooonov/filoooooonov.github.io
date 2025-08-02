@@ -23,10 +23,12 @@ export default function ProjectCards() {
   const middleIndex = Math.floor(projects.length / 2);
   const cardVisibleWidth = 64;
   const hoverOffset = 100;
+  const boxStyles =
+    "absolute transition-all duration-300 ease-in-out bg-white rounded-xl p-[2px] md:p-0.5";
 
   return (
     <div
-      className="relative flex items-center pl-32 md:pl-36 h-60 [filter:drop-shadow(0_12px_10px_rgba(168,162,158,0.4))]"
+      className="relative flex items-center pl-32 md:pl-36 h-80 [filter:drop-shadow(0_12px_10px_rgba(168,162,158,0.4))]"
       onMouseLeave={() => setHoveredIndex(null)}
     >
       {projects.map((project, index) => {
@@ -40,7 +42,7 @@ export default function ProjectCards() {
           if (index === hoveredIndex) {
             transform = `translateX(${
               (index - middleIndex) * cardVisibleWidth
-            }px) rotate(0deg) scale(1.2)`;
+            }px) rotate(0deg) scale(1.6)`;
             zIndex = projects.length;
           } else {
             const side = index < hoveredIndex ? -1 : 1;
@@ -88,7 +90,7 @@ export default function ProjectCards() {
               }
               target="_blank"
               rel="noopener noreferrer"
-              className={`absolute transition-all duration-300 ease-in-out bg-white rounded-xl overflow-hidden p-[2px] md:p-1 cursor-pointer`}
+              className={boxStyles}
               style={{ transform, zIndex }}
               onMouseEnter={() => !isMobile && setHoveredIndex(index)}
               onClick={handleClick}
@@ -101,13 +103,16 @@ export default function ProjectCards() {
                 width={144}
                 height={144}
               />
+              <div className="absolute -bottom-8  h-auto rounded-md w-max px-3 py-1 !text-xs bg-white ">
+                {project.title}
+              </div>
             </a>
           );
         }
         return (
           <div
             key={project.title}
-            className="absolute transition-all duration-300 ease-in-out bg-white rounded-xl overflow-hidden p-[2px] md:p-1"
+            className={boxStyles}
             style={{ transform, zIndex }}
             onMouseEnter={() => !isMobile && setHoveredIndex(index)}
             onClick={() => isMobile && setMobileActiveIndex(index)}

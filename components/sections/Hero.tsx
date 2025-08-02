@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "motion/react";
 import { Button } from "../ui/button";
 import ProjectCards from "./ProjectCards";
+import PortfolioGrid from "./Portfolio";
 
 interface HeroProps {
   className?: string;
@@ -28,6 +29,7 @@ const Hero = ({ className }: HeroProps) => {
           website - and I know exactly how to make you stand out.
         </p>
         <ProjectCards />
+        {/* <PortfolioGrid /> */}
       </motion.div>
 
       <motion.div

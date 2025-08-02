@@ -28,6 +28,28 @@ export const metadata: Metadata = {
     "ui design Finland",
     "web development Finland",
   ],
+  openGraph: {
+    title: "Website Development · Aleksei Filonov",
+    description: "Professional website development and design in Finland.",
+    url: "https://alekseifilonov.com",
+    siteName: "Aleksei Filonov",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Aleksei Filonov - Website Development",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Website Development · Aleksei Filonov",
+    description: "Professional website development and design in Finland.",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 export default function RootLayout({
