@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { projects } from "./ProjectList";
 import Image from "next/image";
+import CustomCursor from "@/components/ui/custom-cursor";
 
 export default function ProjectCards() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -10,6 +11,13 @@ export default function ProjectCards() {
     null
   );
   const [isMobile, setIsMobile] = useState(false);
+  const [cursorVisible, setCursorVisible] = useState(false);
+
+  // Debug cursor visibility
+  useEffect(() => {
+    console.log("Cursor visible:", cursorVisible);
+    console.log("Hovered index:", hoveredIndex);
+  }, [cursorVisible, hoveredIndex]);
 
   useEffect(() => {
     function handleResize() {
@@ -29,7 +37,10 @@ export default function ProjectCards() {
   return (
     <div
       className="relative flex items-center pl-32 md:pl-36 h-80 [filter:drop-shadow(0_12px_10px_rgba(168,162,158,0.4))]"
-      onMouseLeave={() => setHoveredIndex(null)}
+      onMouseLeave={() => {
+        setHoveredIndex(null);
+        setCursorVisible(false);
+      }}
     >
       {projects.map((project, index) => {
         let transform = `translateX(${
@@ -92,7 +103,18 @@ export default function ProjectCards() {
               rel="noopener noreferrer"
               className={boxStyles}
               style={{ transform, zIndex }}
-              onMouseEnter={() => !isMobile && setHoveredIndex(index)}
+              onMouseEnter={() => {
+                if (!isMobile) {
+                  setHoveredIndex(index);
+                  setCursorVisible(true);
+                  console.log("Mouse entered project:", projects[index].title);
+                }
+              }}
+              onMouseMove={() => {
+                if (!isMobile && !cursorVisible) {
+                  setCursorVisible(true);
+                }
+              }}
               onClick={handleClick}
               tabIndex={0}
             >
@@ -103,9 +125,6 @@ export default function ProjectCards() {
                 width={144}
                 height={144}
               />
-              {/* <div className="absolute -bottom-8  h-auto rounded-md w-max px-3 py-1 !text-xs bg-white ">
-                {project.title}
-              </div> */}
             </a>
           );
         }
@@ -114,7 +133,18 @@ export default function ProjectCards() {
             key={project.title}
             className={boxStyles}
             style={{ transform, zIndex }}
-            onMouseEnter={() => !isMobile && setHoveredIndex(index)}
+            onMouseEnter={() => {
+              if (!isMobile) {
+                setHoveredIndex(index);
+                setCursorVisible(true);
+                console.log("Mouse entered project:", projects[index].title);
+              }
+            }}
+            onMouseMove={() => {
+              if (!isMobile && !cursorVisible) {
+                setCursorVisible(true);
+              }
+            }}
             onClick={() => isMobile && setMobileActiveIndex(index)}
           >
             <Image
@@ -127,6 +157,11 @@ export default function ProjectCards() {
           </div>
         );
       })}
+      <CustomCursor
+        visible={cursorVisible && !isMobile}
+        link={hoveredIndex !== null ? projects[hoveredIndex].link : undefined}
+        text={hoveredIndex !== null ? projects[hoveredIndex].title : undefined}
+      />
     </div>
   );
 }

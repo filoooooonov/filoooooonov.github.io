@@ -46,14 +46,14 @@ const projectList = [
   //     "A place for startups and companies to share their stories from day one. Paused.",
   // },
   {
-    title: "Website for IKIGAIA",
+    title: "IKIGAIA",
     image: ikigaiaImg,
     link: "https://ikigaia.fi",
     descriptionShort:
       "A portfolio website for IKIGAIA with a strong focus on presentability and professionalism. In development.",
   },
   {
-    title: "Portfolio website for Kukibit",
+    title: "Kukibit",
     image: kukibitImg,
     link: "https://kukibit.fi",
     category: "webdev",
