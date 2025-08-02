@@ -103,9 +103,9 @@ export default function ProjectCards() {
                 width={144}
                 height={144}
               />
-              <div className="absolute -bottom-8  h-auto rounded-md w-max px-3 py-1 !text-xs bg-white ">
+              {/* <div className="absolute -bottom-8  h-auto rounded-md w-max px-3 py-1 !text-xs bg-white ">
                 {project.title}
-              </div>
+              </div> */}
             </a>
           );
         }
