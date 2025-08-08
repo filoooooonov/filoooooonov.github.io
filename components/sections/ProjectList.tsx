@@ -2,7 +2,7 @@ import kukibitImg from "@/public/kukibit_square_preview.png";
 import ruokascraperImg from "@/public/ruokascraper_mockup.webp";
 import ikigaiaImg from "@/public/ikigaia_square.png";
 import timelinerImg from "@/public/timeliner_square.png";
-import vitalSignsImg from "@/public/vitalsigns_square.png";
+import vitalSignsImg from "@/public/vitalsigns_square_preview.png";
 import automataImg from "@/public/automata_square.png";
 import hcsImg from "@/public/hcs_square.png";
 import { StaticImageData } from "next/image";

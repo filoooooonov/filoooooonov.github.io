@@ -67,7 +67,7 @@ export default function CustomCursor({
                   {link ? "Visit" : "WIP"}
                 </span>
 
-                <span className="text-neutral-200 font-medium  text-xs relative">
+                <span className="text-neutral-200 font-medium relative">
                   {text}
                 </span>
                 {link && <MdOutlineArrowOutward className="text-neutral-400" />}
