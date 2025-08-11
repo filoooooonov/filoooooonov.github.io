@@ -55,6 +55,13 @@ const Hero = ({ className }: HeroProps) => {
             <Button variant="secondary">I don't like calls</Button>
           </a>
         </div>
+        <div className="flex gap-2 items-center mt-4">
+          <span className="relative flex size-3">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime-400 opacity-75"></span>
+            <span className="relative inline-flex size-3 rounded-full bg-lime-500"></span>
+          </span>
+          <p className="text-sm">1 spot left for September</p>
+        </div>
       </motion.div>
     </section>
   );
