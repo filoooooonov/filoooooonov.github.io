@@ -7,6 +7,7 @@ import { motion } from "motion/react";
 import Footer from "@/components/sections/Footer";
 import Features from "@/components/sections/Features";
 import AboutMe from "@/components/sections/AboutMe";
+import Testimonials from "@/components/sections/Testimonials";
 
 export default function Home() {
   const refHero = useRef<HTMLDivElement>(null);
@@ -32,6 +33,7 @@ export default function Home() {
       >
         <Hero />
         <Features />
+        <Testimonials />
         <AboutMe />
       </motion.div>
     </motion.main>
