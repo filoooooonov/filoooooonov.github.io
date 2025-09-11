@@ -5,6 +5,7 @@ import timelinerImg from "@/public/timeliner_square.png";
 import vitalSignsImg from "@/public/vitalsigns_square_new.png";
 import automataImg from "@/public/automata_square.png";
 import hcsImg from "@/public/hcs_square.png";
+import regeneeringImg from "@/public/regeneering_square.png";
 import { StaticImageData } from "next/image";
 
 export interface Project {
@@ -17,6 +18,13 @@ export interface Project {
 }
 
 const projectList = [
+  {
+    title: "Regeneering",
+    image: regeneeringImg,
+    tags: [],
+    link: "https://regeneering.co",
+    descriptionShort: "Regeneering",
+  },
   {
     title: "Automata",
     image: automataImg,
