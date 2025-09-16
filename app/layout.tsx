@@ -9,11 +9,7 @@ import { ReactLenis } from "@/components/utils/lenis";
 import { cn } from "@/lib/utils";
 import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
-
-// const fontSans = Onest({
-//   subsets: ["latin"],
-//   variable: "--font-sans",
-// });
+import { PostHogProvider } from "./providers";
 
 export const metadata: Metadata = {
   title: "Website Development · Aleksei Filonov",
@@ -63,11 +59,11 @@ export default function RootLayout({
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-WG3RFFPKQ7"
           strategy="afterInteractive"
-        ></Script>
+        />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){dataLayer.push(arguments);}  
             gtag('js', new Date());
 
             gtag('consent', 'default', {
@@ -81,7 +77,7 @@ export default function RootLayout({
                 });
 
             gtag('config', 'G-WG3RFFPKQ7');
-            `}
+          `}
         </Script>
       </head>
       <body
@@ -90,12 +86,14 @@ export default function RootLayout({
           GeistSans.className
         )}
       >
-        <ReactLenis root>
-          <Header />
-          {children}
-          <Footer />
-        </ReactLenis>
-        <Analytics />
+        <PostHogProvider>
+          <ReactLenis root>
+            <Header />
+            {children}
+            <Footer />
+          </ReactLenis>
+          <Analytics />
+        </PostHogProvider>
       </body>
     </html>
   );
