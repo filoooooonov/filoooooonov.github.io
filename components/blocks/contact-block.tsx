@@ -9,7 +9,7 @@ import { MdVideoCall } from "react-icons/md";
 const contacts = [
   {
     name: "Email Me",
-    link: "mailto:alexfiloonov@gmail.com",
+    link: "mailto:contact@alekseifilonov.com",
     icon: EnvelopeIcon,
   },
   {

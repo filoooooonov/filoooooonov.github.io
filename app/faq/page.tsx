@@ -113,7 +113,7 @@ export default function page() {
             Can't find an answer? Send me an{" "}
             <a
               target="_blank"
-              href="mailto:alexfiloonov@gmail.com"
+              href="mailto:contact@alekseifilonov.com"
               className="font-medium"
             >
               email

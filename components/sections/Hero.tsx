@@ -51,7 +51,7 @@ const Hero = ({ className }: HeroProps) => {
             <Button variant="default">Book a call</Button>
           </a>
 
-          <a href="mailto:alexfiloonov@gmail.com">
+          <a href="mailto:contact@alekseifilonov.com">
             <Button variant="secondary">I don't like calls</Button>
           </a>
         </div>

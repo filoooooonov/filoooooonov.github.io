@@ -12,7 +12,7 @@ const contactLinks = [
     label: "Book a call",
   },
   {
-    href: "mailto:alexfiloonov@gmail.com",
+    href: "mailto:contact@alekseifilonov.com",
     label: "Email",
   },
   {

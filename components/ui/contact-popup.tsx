@@ -22,7 +22,7 @@ export default function ContactPopup({ className, text }: ContactPopupProps) {
     {
       name: "Email",
       icon: <Image src={GmailIcon} alt="Gmail Icon" width={16} height={16} />,
-      href: "mailto:alexfiloonov@gmail.com",
+      href: "mailto:contact@alekseifilonov.com",
     },
     {
       name: "Telegram",

@@ -96,7 +96,7 @@ export default function Features() {
           Have a project in mind?{" "}
           <span className="text-stone-600">
             Shoot me an{" "}
-            <a target="_blank" href="mailto:alexfiloonov@gmail.com">
+            <a target="_blank" href="mailto:contact@alekseifilonov.com">
               email
             </a>{" "}
             or{" "}
@@ -110,7 +110,7 @@ export default function Features() {
           Have questions?{" "}
           <span className="text-stone-600">
             Check out the <Link href="/faq">FAQ</Link> or send me an{" "}
-            <a target="_blank" href="mailto:alexfiloonov@gmail.com">
+            <a target="_blank" href="mailto:contact@alekseifilonov.com">
               email
             </a>
             .
